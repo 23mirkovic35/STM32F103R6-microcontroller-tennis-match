@@ -1,0 +1,717 @@
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"tim.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.MX_TIM1_Init,"ax",%progbits
+  16              		.align	1
+  17              		.global	MX_TIM1_Init
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	MX_TIM1_Init:
+  25              	.LFB65:
+  26              		.file 1 "../Core/Src/tim.c"
+   1:../Core/Src/tim.c **** 
+  27              		.loc 1 32 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 24
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 00B5     		push	{lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 4
+  34              		.cfi_offset 14, -4
+  35 0002 87B0     		sub	sp, sp, #28
+  36              	.LCFI1:
+  37              		.cfi_def_cfa_offset 32
+  38              		.loc 1 38 3 view .LVU1
+  39              		.loc 1 38 26 is_stmt 0 view .LVU2
+  40 0004 0023     		movs	r3, #0
+  41 0006 0293     		str	r3, [sp, #8]
+  42 0008 0393     		str	r3, [sp, #12]
+  43 000a 0493     		str	r3, [sp, #16]
+  44 000c 0593     		str	r3, [sp, #20]
+  45              		.loc 1 39 3 is_stmt 1 view .LVU3
+  46              		.loc 1 39 27 is_stmt 0 view .LVU4
+  47 000e 0093     		str	r3, [sp]
+  48 0010 0193     		str	r3, [sp, #4]
+  49              		.loc 1 44 3 is_stmt 1 view .LVU5
+  50              		.loc 1 44 18 is_stmt 0 view .LVU6
+  51 0012 1548     		ldr	r0, .L9
+  52 0014 154A     		ldr	r2, .L9+4
+  53 0016 0260     		str	r2, [r0]
+  54              		.loc 1 45 3 is_stmt 1 view .LVU7
+  55              		.loc 1 45 24 is_stmt 0 view .LVU8
+  56 0018 40F2E732 		movw	r2, #999
+  57 001c 4260     		str	r2, [r0, #4]
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 2
+
+
+  58              		.loc 1 46 3 is_stmt 1 view .LVU9
+  59              		.loc 1 46 26 is_stmt 0 view .LVU10
+  60 001e 8360     		str	r3, [r0, #8]
+  61              		.loc 1 47 3 is_stmt 1 view .LVU11
+  62              		.loc 1 47 21 is_stmt 0 view .LVU12
+  63 0020 4F22     		movs	r2, #79
+  64 0022 C260     		str	r2, [r0, #12]
+  65              		.loc 1 48 3 is_stmt 1 view .LVU13
+  66              		.loc 1 48 28 is_stmt 0 view .LVU14
+  67 0024 0361     		str	r3, [r0, #16]
+  68              		.loc 1 49 3 is_stmt 1 view .LVU15
+  69              		.loc 1 49 32 is_stmt 0 view .LVU16
+  70 0026 4361     		str	r3, [r0, #20]
+  71              		.loc 1 50 3 is_stmt 1 view .LVU17
+  72              		.loc 1 50 32 is_stmt 0 view .LVU18
+  73 0028 8361     		str	r3, [r0, #24]
+  74              		.loc 1 51 3 is_stmt 1 view .LVU19
+  75              		.loc 1 51 7 is_stmt 0 view .LVU20
+  76 002a 114B     		ldr	r3, .L9+8
+  77 002c 9847     		blx	r3
+  78              	.LVL0:
+  79              		.loc 1 51 6 view .LVU21
+  80 002e 90B9     		cbnz	r0, .L6
+  81              	.L2:
+  82              		.loc 1 55 3 is_stmt 1 view .LVU22
+  83              		.loc 1 55 34 is_stmt 0 view .LVU23
+  84 0030 4FF48053 		mov	r3, #4096
+  85 0034 0293     		str	r3, [sp, #8]
+  86              		.loc 1 56 3 is_stmt 1 view .LVU24
+  87              		.loc 1 56 7 is_stmt 0 view .LVU25
+  88 0036 02A9     		add	r1, sp, #8
+  89 0038 0B48     		ldr	r0, .L9
+  90 003a 0E4B     		ldr	r3, .L9+12
+  91 003c 9847     		blx	r3
+  92              	.LVL1:
+  93              		.loc 1 56 6 view .LVU26
+  94 003e 68B9     		cbnz	r0, .L7
+  95              	.L3:
+  96              		.loc 1 60 3 is_stmt 1 view .LVU27
+  97              		.loc 1 60 37 is_stmt 0 view .LVU28
+  98 0040 0023     		movs	r3, #0
+  99 0042 0093     		str	r3, [sp]
+ 100              		.loc 1 61 3 is_stmt 1 view .LVU29
+ 101              		.loc 1 61 33 is_stmt 0 view .LVU30
+ 102 0044 0193     		str	r3, [sp, #4]
+ 103              		.loc 1 62 3 is_stmt 1 view .LVU31
+ 104              		.loc 1 62 7 is_stmt 0 view .LVU32
+ 105 0046 6946     		mov	r1, sp
+ 106 0048 0748     		ldr	r0, .L9
+ 107 004a 0B4B     		ldr	r3, .L9+16
+ 108 004c 9847     		blx	r3
+ 109              	.LVL2:
+ 110              		.loc 1 62 6 view .LVU33
+ 111 004e 40B9     		cbnz	r0, .L8
+ 112              	.L1:
+ 113              		.loc 1 70 1 view .LVU34
+ 114 0050 07B0     		add	sp, sp, #28
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 3
+
+
+ 115              	.LCFI2:
+ 116              		.cfi_remember_state
+ 117              		.cfi_def_cfa_offset 4
+ 118              		@ sp needed
+ 119 0052 5DF804FB 		ldr	pc, [sp], #4
+ 120              	.L6:
+ 121              	.LCFI3:
+ 122              		.cfi_restore_state
+ 123              		.loc 1 53 5 is_stmt 1 view .LVU35
+ 124 0056 094B     		ldr	r3, .L9+20
+ 125 0058 9847     		blx	r3
+ 126              	.LVL3:
+ 127 005a E9E7     		b	.L2
+ 128              	.L7:
+ 129              		.loc 1 58 5 view .LVU36
+ 130 005c 074B     		ldr	r3, .L9+20
+ 131 005e 9847     		blx	r3
+ 132              	.LVL4:
+ 133 0060 EEE7     		b	.L3
+ 134              	.L8:
+ 135              		.loc 1 64 5 view .LVU37
+ 136 0062 064B     		ldr	r3, .L9+20
+ 137 0064 9847     		blx	r3
+ 138              	.LVL5:
+ 139              		.loc 1 70 1 is_stmt 0 view .LVU38
+ 140 0066 F3E7     		b	.L1
+ 141              	.L10:
+ 142              		.align	2
+ 143              	.L9:
+ 144 0068 00000000 		.word	.LANCHOR0
+ 145 006c 002C0140 		.word	1073818624
+ 146 0070 00000000 		.word	HAL_TIM_Base_Init
+ 147 0074 00000000 		.word	HAL_TIM_ConfigClockSource
+ 148 0078 00000000 		.word	HAL_TIMEx_MasterConfigSynchronization
+ 149 007c 00000000 		.word	Error_Handler
+ 150              		.cfi_endproc
+ 151              	.LFE65:
+ 153              		.section	.text.MX_TIM3_Init,"ax",%progbits
+ 154              		.align	1
+ 155              		.global	MX_TIM3_Init
+ 156              		.syntax unified
+ 157              		.thumb
+ 158              		.thumb_func
+ 159              		.fpu softvfp
+ 161              	MX_TIM3_Init:
+ 162              	.LFB66:
+ 163              		.loc 1 73 1 is_stmt 1 view -0
+ 164              		.cfi_startproc
+ 165              		@ args = 0, pretend = 0, frame = 40
+ 166              		@ frame_needed = 0, uses_anonymous_args = 0
+ 167 0000 00B5     		push	{lr}
+ 168              	.LCFI4:
+ 169              		.cfi_def_cfa_offset 4
+ 170              		.cfi_offset 14, -4
+ 171 0002 8BB0     		sub	sp, sp, #44
+ 172              	.LCFI5:
+ 173              		.cfi_def_cfa_offset 48
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 4
+
+
+ 174              		.loc 1 79 3 view .LVU40
+ 175              		.loc 1 79 26 is_stmt 0 view .LVU41
+ 176 0004 0023     		movs	r3, #0
+ 177 0006 0693     		str	r3, [sp, #24]
+ 178 0008 0793     		str	r3, [sp, #28]
+ 179 000a 0893     		str	r3, [sp, #32]
+ 180 000c 0993     		str	r3, [sp, #36]
+ 181              		.loc 1 80 3 is_stmt 1 view .LVU42
+ 182              		.loc 1 80 27 is_stmt 0 view .LVU43
+ 183 000e 0493     		str	r3, [sp, #16]
+ 184 0010 0593     		str	r3, [sp, #20]
+ 185              		.loc 1 81 3 is_stmt 1 view .LVU44
+ 186              		.loc 1 81 22 is_stmt 0 view .LVU45
+ 187 0012 0093     		str	r3, [sp]
+ 188 0014 0193     		str	r3, [sp, #4]
+ 189 0016 0293     		str	r3, [sp, #8]
+ 190 0018 0393     		str	r3, [sp, #12]
+ 191              		.loc 1 86 3 is_stmt 1 view .LVU46
+ 192              		.loc 1 86 18 is_stmt 0 view .LVU47
+ 193 001a 2548     		ldr	r0, .L25
+ 194 001c 254A     		ldr	r2, .L25+4
+ 195 001e 0260     		str	r2, [r0]
+ 196              		.loc 1 87 3 is_stmt 1 view .LVU48
+ 197              		.loc 1 87 24 is_stmt 0 view .LVU49
+ 198 0020 41F63F72 		movw	r2, #7999
+ 199 0024 4260     		str	r2, [r0, #4]
+ 200              		.loc 1 88 3 is_stmt 1 view .LVU50
+ 201              		.loc 1 88 26 is_stmt 0 view .LVU51
+ 202 0026 8360     		str	r3, [r0, #8]
+ 203              		.loc 1 89 3 is_stmt 1 view .LVU52
+ 204              		.loc 1 89 21 is_stmt 0 view .LVU53
+ 205 0028 0922     		movs	r2, #9
+ 206 002a C260     		str	r2, [r0, #12]
+ 207              		.loc 1 90 3 is_stmt 1 view .LVU54
+ 208              		.loc 1 90 28 is_stmt 0 view .LVU55
+ 209 002c 0361     		str	r3, [r0, #16]
+ 210              		.loc 1 91 3 is_stmt 1 view .LVU56
+ 211              		.loc 1 91 32 is_stmt 0 view .LVU57
+ 212 002e 8361     		str	r3, [r0, #24]
+ 213              		.loc 1 92 3 is_stmt 1 view .LVU58
+ 214              		.loc 1 92 7 is_stmt 0 view .LVU59
+ 215 0030 214B     		ldr	r3, .L25+8
+ 216 0032 9847     		blx	r3
+ 217              	.LVL6:
+ 218              		.loc 1 92 6 view .LVU60
+ 219 0034 0028     		cmp	r0, #0
+ 220 0036 29D1     		bne	.L19
+ 221              	.L12:
+ 222              		.loc 1 96 3 is_stmt 1 view .LVU61
+ 223              		.loc 1 96 34 is_stmt 0 view .LVU62
+ 224 0038 4FF48053 		mov	r3, #4096
+ 225 003c 0693     		str	r3, [sp, #24]
+ 226              		.loc 1 97 3 is_stmt 1 view .LVU63
+ 227              		.loc 1 97 7 is_stmt 0 view .LVU64
+ 228 003e 06A9     		add	r1, sp, #24
+ 229 0040 1B48     		ldr	r0, .L25
+ 230 0042 1E4B     		ldr	r3, .L25+12
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 5
+
+
+ 231 0044 9847     		blx	r3
+ 232              	.LVL7:
+ 233              		.loc 1 97 6 view .LVU65
+ 234 0046 20BB     		cbnz	r0, .L20
+ 235              	.L13:
+ 236              		.loc 1 101 3 is_stmt 1 view .LVU66
+ 237              		.loc 1 101 7 is_stmt 0 view .LVU67
+ 238 0048 1948     		ldr	r0, .L25
+ 239 004a 1D4B     		ldr	r3, .L25+16
+ 240 004c 9847     		blx	r3
+ 241              	.LVL8:
+ 242              		.loc 1 101 6 view .LVU68
+ 243 004e 18BB     		cbnz	r0, .L21
+ 244              	.L14:
+ 245              		.loc 1 105 3 is_stmt 1 view .LVU69
+ 246              		.loc 1 105 37 is_stmt 0 view .LVU70
+ 247 0050 0023     		movs	r3, #0
+ 248 0052 0493     		str	r3, [sp, #16]
+ 249              		.loc 1 106 3 is_stmt 1 view .LVU71
+ 250              		.loc 1 106 33 is_stmt 0 view .LVU72
+ 251 0054 0593     		str	r3, [sp, #20]
+ 252              		.loc 1 107 3 is_stmt 1 view .LVU73
+ 253              		.loc 1 107 7 is_stmt 0 view .LVU74
+ 254 0056 04A9     		add	r1, sp, #16
+ 255 0058 1548     		ldr	r0, .L25
+ 256 005a 1A4B     		ldr	r3, .L25+20
+ 257 005c 9847     		blx	r3
+ 258              	.LVL9:
+ 259              		.loc 1 107 6 view .LVU75
+ 260 005e F0B9     		cbnz	r0, .L22
+ 261              	.L15:
+ 262              		.loc 1 111 3 is_stmt 1 view .LVU76
+ 263              		.loc 1 111 24 is_stmt 0 view .LVU77
+ 264 0060 0022     		movs	r2, #0
+ 265 0062 0092     		str	r2, [sp]
+ 266              		.loc 1 112 3 is_stmt 1 view .LVU78
+ 267              		.loc 1 112 25 is_stmt 0 view .LVU79
+ 268 0064 0123     		movs	r3, #1
+ 269 0066 0193     		str	r3, [sp, #4]
+ 270              		.loc 1 113 3 is_stmt 1 view .LVU80
+ 271              		.loc 1 113 25 is_stmt 0 view .LVU81
+ 272 0068 0292     		str	r2, [sp, #8]
+ 273              		.loc 1 114 3 is_stmt 1 view .LVU82
+ 274              		.loc 1 114 22 is_stmt 0 view .LVU83
+ 275 006a 0392     		str	r2, [sp, #12]
+ 276              		.loc 1 115 3 is_stmt 1 view .LVU84
+ 277              		.loc 1 115 7 is_stmt 0 view .LVU85
+ 278 006c 6946     		mov	r1, sp
+ 279 006e 1048     		ldr	r0, .L25
+ 280 0070 154B     		ldr	r3, .L25+24
+ 281 0072 9847     		blx	r3
+ 282              	.LVL10:
+ 283              		.loc 1 115 6 view .LVU86
+ 284 0074 B0B9     		cbnz	r0, .L23
+ 285              	.L16:
+ 286              		.loc 1 119 3 is_stmt 1 view .LVU87
+ 287              		.loc 1 119 24 is_stmt 0 view .LVU88
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 6
+
+
+ 288 0076 0223     		movs	r3, #2
+ 289 0078 0093     		str	r3, [sp]
+ 290              		.loc 1 120 3 is_stmt 1 view .LVU89
+ 291              		.loc 1 120 7 is_stmt 0 view .LVU90
+ 292 007a 0422     		movs	r2, #4
+ 293 007c 6946     		mov	r1, sp
+ 294 007e 0C48     		ldr	r0, .L25
+ 295 0080 114B     		ldr	r3, .L25+24
+ 296 0082 9847     		blx	r3
+ 297              	.LVL11:
+ 298              		.loc 1 120 6 view .LVU91
+ 299 0084 88B9     		cbnz	r0, .L24
+ 300              	.L11:
+ 301              		.loc 1 128 1 view .LVU92
+ 302 0086 0BB0     		add	sp, sp, #44
+ 303              	.LCFI6:
+ 304              		.cfi_remember_state
+ 305              		.cfi_def_cfa_offset 4
+ 306              		@ sp needed
+ 307 0088 5DF804FB 		ldr	pc, [sp], #4
+ 308              	.L19:
+ 309              	.LCFI7:
+ 310              		.cfi_restore_state
+ 311              		.loc 1 94 5 is_stmt 1 view .LVU93
+ 312 008c 0F4B     		ldr	r3, .L25+28
+ 313 008e 9847     		blx	r3
+ 314              	.LVL12:
+ 315 0090 D2E7     		b	.L12
+ 316              	.L20:
+ 317              		.loc 1 99 5 view .LVU94
+ 318 0092 0E4B     		ldr	r3, .L25+28
+ 319 0094 9847     		blx	r3
+ 320              	.LVL13:
+ 321 0096 D7E7     		b	.L13
+ 322              	.L21:
+ 323              		.loc 1 103 5 view .LVU95
+ 324 0098 0C4B     		ldr	r3, .L25+28
+ 325 009a 9847     		blx	r3
+ 326              	.LVL14:
+ 327 009c D8E7     		b	.L14
+ 328              	.L22:
+ 329              		.loc 1 109 5 view .LVU96
+ 330 009e 0B4B     		ldr	r3, .L25+28
+ 331 00a0 9847     		blx	r3
+ 332              	.LVL15:
+ 333 00a2 DDE7     		b	.L15
+ 334              	.L23:
+ 335              		.loc 1 117 5 view .LVU97
+ 336 00a4 094B     		ldr	r3, .L25+28
+ 337 00a6 9847     		blx	r3
+ 338              	.LVL16:
+ 339 00a8 E5E7     		b	.L16
+ 340              	.L24:
+ 341              		.loc 1 122 5 view .LVU98
+ 342 00aa 084B     		ldr	r3, .L25+28
+ 343 00ac 9847     		blx	r3
+ 344              	.LVL17:
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 7
+
+
+ 345              		.loc 1 128 1 is_stmt 0 view .LVU99
+ 346 00ae EAE7     		b	.L11
+ 347              	.L26:
+ 348              		.align	2
+ 349              	.L25:
+ 350 00b0 00000000 		.word	.LANCHOR1
+ 351 00b4 00040040 		.word	1073742848
+ 352 00b8 00000000 		.word	HAL_TIM_Base_Init
+ 353 00bc 00000000 		.word	HAL_TIM_ConfigClockSource
+ 354 00c0 00000000 		.word	HAL_TIM_IC_Init
+ 355 00c4 00000000 		.word	HAL_TIMEx_MasterConfigSynchronization
+ 356 00c8 00000000 		.word	HAL_TIM_IC_ConfigChannel
+ 357 00cc 00000000 		.word	Error_Handler
+ 358              		.cfi_endproc
+ 359              	.LFE66:
+ 361              		.section	.text.HAL_TIM_Base_MspInit,"ax",%progbits
+ 362              		.align	1
+ 363              		.global	HAL_TIM_Base_MspInit
+ 364              		.syntax unified
+ 365              		.thumb
+ 366              		.thumb_func
+ 367              		.fpu softvfp
+ 369              	HAL_TIM_Base_MspInit:
+ 370              	.LVL18:
+ 371              	.LFB67:
+ 372              		.loc 1 131 1 is_stmt 1 view -0
+ 373              		.cfi_startproc
+ 374              		@ args = 0, pretend = 0, frame = 32
+ 375              		@ frame_needed = 0, uses_anonymous_args = 0
+ 376              		.loc 1 131 1 is_stmt 0 view .LVU101
+ 377 0000 30B5     		push	{r4, r5, lr}
+ 378              	.LCFI8:
+ 379              		.cfi_def_cfa_offset 12
+ 380              		.cfi_offset 4, -12
+ 381              		.cfi_offset 5, -8
+ 382              		.cfi_offset 14, -4
+ 383 0002 89B0     		sub	sp, sp, #36
+ 384              	.LCFI9:
+ 385              		.cfi_def_cfa_offset 48
+ 386              		.loc 1 133 3 is_stmt 1 view .LVU102
+ 387              		.loc 1 133 20 is_stmt 0 view .LVU103
+ 388 0004 0023     		movs	r3, #0
+ 389 0006 0493     		str	r3, [sp, #16]
+ 390 0008 0593     		str	r3, [sp, #20]
+ 391 000a 0693     		str	r3, [sp, #24]
+ 392 000c 0793     		str	r3, [sp, #28]
+ 393              		.loc 1 134 3 is_stmt 1 view .LVU104
+ 394              		.loc 1 134 20 is_stmt 0 view .LVU105
+ 395 000e 0368     		ldr	r3, [r0]
+ 396              		.loc 1 134 5 view .LVU106
+ 397 0010 214A     		ldr	r2, .L33
+ 398 0012 9342     		cmp	r3, r2
+ 399 0014 04D0     		beq	.L31
+ 400              		.loc 1 151 8 is_stmt 1 view .LVU107
+ 401              		.loc 1 151 10 is_stmt 0 view .LVU108
+ 402 0016 214A     		ldr	r2, .L33+4
+ 403 0018 9342     		cmp	r3, r2
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 8
+
+
+ 404 001a 1AD0     		beq	.L32
+ 405              	.LVL19:
+ 406              	.L27:
+ 407              		.loc 1 176 1 view .LVU109
+ 408 001c 09B0     		add	sp, sp, #36
+ 409              	.LCFI10:
+ 410              		.cfi_remember_state
+ 411              		.cfi_def_cfa_offset 12
+ 412              		@ sp needed
+ 413 001e 30BD     		pop	{r4, r5, pc}
+ 414              	.LVL20:
+ 415              	.L31:
+ 416              	.LCFI11:
+ 417              		.cfi_restore_state
+ 418              		.loc 1 140 5 is_stmt 1 view .LVU110
+ 419              	.LBB2:
+ 420              		.loc 1 140 5 view .LVU111
+ 421              		.loc 1 140 5 view .LVU112
+ 422 0020 1F4B     		ldr	r3, .L33+8
+ 423 0022 9A69     		ldr	r2, [r3, #24]
+ 424 0024 42F40062 		orr	r2, r2, #2048
+ 425 0028 9A61     		str	r2, [r3, #24]
+ 426              		.loc 1 140 5 view .LVU113
+ 427 002a 9B69     		ldr	r3, [r3, #24]
+ 428 002c 03F40063 		and	r3, r3, #2048
+ 429 0030 0193     		str	r3, [sp, #4]
+ 430              		.loc 1 140 5 view .LVU114
+ 431 0032 019B     		ldr	r3, [sp, #4]
+ 432              	.LBE2:
+ 433              		.loc 1 140 5 view .LVU115
+ 434              		.loc 1 143 5 view .LVU116
+ 435 0034 0022     		movs	r2, #0
+ 436 0036 1146     		mov	r1, r2
+ 437 0038 1920     		movs	r0, #25
+ 438              	.LVL21:
+ 439              		.loc 1 143 5 is_stmt 0 view .LVU117
+ 440 003a 1A4D     		ldr	r5, .L33+12
+ 441 003c A847     		blx	r5
+ 442              	.LVL22:
+ 443              		.loc 1 144 5 is_stmt 1 view .LVU118
+ 444 003e 1920     		movs	r0, #25
+ 445 0040 194C     		ldr	r4, .L33+16
+ 446 0042 A047     		blx	r4
+ 447              	.LVL23:
+ 448              		.loc 1 145 5 view .LVU119
+ 449 0044 0022     		movs	r2, #0
+ 450 0046 1146     		mov	r1, r2
+ 451 0048 1B20     		movs	r0, #27
+ 452 004a A847     		blx	r5
+ 453              	.LVL24:
+ 454              		.loc 1 146 5 view .LVU120
+ 455 004c 1B20     		movs	r0, #27
+ 456 004e A047     		blx	r4
+ 457              	.LVL25:
+ 458 0050 E4E7     		b	.L27
+ 459              	.LVL26:
+ 460              	.L32:
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 9
+
+
+ 461              		.loc 1 157 5 view .LVU121
+ 462              	.LBB3:
+ 463              		.loc 1 157 5 view .LVU122
+ 464              		.loc 1 157 5 view .LVU123
+ 465 0052 134B     		ldr	r3, .L33+8
+ 466 0054 DA69     		ldr	r2, [r3, #28]
+ 467 0056 42F00202 		orr	r2, r2, #2
+ 468 005a DA61     		str	r2, [r3, #28]
+ 469              		.loc 1 157 5 view .LVU124
+ 470 005c DA69     		ldr	r2, [r3, #28]
+ 471 005e 02F00202 		and	r2, r2, #2
+ 472 0062 0292     		str	r2, [sp, #8]
+ 473              		.loc 1 157 5 view .LVU125
+ 474 0064 029A     		ldr	r2, [sp, #8]
+ 475              	.LBE3:
+ 476              		.loc 1 157 5 view .LVU126
+ 477              		.loc 1 159 5 view .LVU127
+ 478              	.LBB4:
+ 479              		.loc 1 159 5 view .LVU128
+ 480              		.loc 1 159 5 view .LVU129
+ 481 0066 9A69     		ldr	r2, [r3, #24]
+ 482 0068 42F00402 		orr	r2, r2, #4
+ 483 006c 9A61     		str	r2, [r3, #24]
+ 484              		.loc 1 159 5 view .LVU130
+ 485 006e 9B69     		ldr	r3, [r3, #24]
+ 486 0070 03F00403 		and	r3, r3, #4
+ 487 0074 0393     		str	r3, [sp, #12]
+ 488              		.loc 1 159 5 view .LVU131
+ 489 0076 039B     		ldr	r3, [sp, #12]
+ 490              	.LBE4:
+ 491              		.loc 1 159 5 view .LVU132
+ 492              		.loc 1 164 5 view .LVU133
+ 493              		.loc 1 164 25 is_stmt 0 view .LVU134
+ 494 0078 C023     		movs	r3, #192
+ 495 007a 0493     		str	r3, [sp, #16]
+ 496              		.loc 1 165 5 is_stmt 1 view .LVU135
+ 497              		.loc 1 166 5 view .LVU136
+ 498              		.loc 1 167 5 view .LVU137
+ 499 007c 04A9     		add	r1, sp, #16
+ 500 007e 0B48     		ldr	r0, .L33+20
+ 501              	.LVL27:
+ 502              		.loc 1 167 5 is_stmt 0 view .LVU138
+ 503 0080 0B4B     		ldr	r3, .L33+24
+ 504 0082 9847     		blx	r3
+ 505              	.LVL28:
+ 506              		.loc 1 170 5 is_stmt 1 view .LVU139
+ 507 0084 0022     		movs	r2, #0
+ 508 0086 1146     		mov	r1, r2
+ 509 0088 1D20     		movs	r0, #29
+ 510 008a 064B     		ldr	r3, .L33+12
+ 511 008c 9847     		blx	r3
+ 512              	.LVL29:
+ 513              		.loc 1 171 5 view .LVU140
+ 514 008e 1D20     		movs	r0, #29
+ 515 0090 054B     		ldr	r3, .L33+16
+ 516 0092 9847     		blx	r3
+ 517              	.LVL30:
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 10
+
+
+ 518              		.loc 1 176 1 is_stmt 0 view .LVU141
+ 519 0094 C2E7     		b	.L27
+ 520              	.L34:
+ 521 0096 00BF     		.align	2
+ 522              	.L33:
+ 523 0098 002C0140 		.word	1073818624
+ 524 009c 00040040 		.word	1073742848
+ 525 00a0 00100240 		.word	1073876992
+ 526 00a4 00000000 		.word	HAL_NVIC_SetPriority
+ 527 00a8 00000000 		.word	HAL_NVIC_EnableIRQ
+ 528 00ac 00080140 		.word	1073809408
+ 529 00b0 00000000 		.word	HAL_GPIO_Init
+ 530              		.cfi_endproc
+ 531              	.LFE67:
+ 533              		.section	.text.HAL_TIM_Base_MspDeInit,"ax",%progbits
+ 534              		.align	1
+ 535              		.global	HAL_TIM_Base_MspDeInit
+ 536              		.syntax unified
+ 537              		.thumb
+ 538              		.thumb_func
+ 539              		.fpu softvfp
+ 541              	HAL_TIM_Base_MspDeInit:
+ 542              	.LVL31:
+ 543              	.LFB68:
+ 544              		.loc 1 179 1 is_stmt 1 view -0
+ 545              		.cfi_startproc
+ 546              		@ args = 0, pretend = 0, frame = 0
+ 547              		@ frame_needed = 0, uses_anonymous_args = 0
+ 548              		.loc 1 179 1 is_stmt 0 view .LVU143
+ 549 0000 10B5     		push	{r4, lr}
+ 550              	.LCFI12:
+ 551              		.cfi_def_cfa_offset 8
+ 552              		.cfi_offset 4, -8
+ 553              		.cfi_offset 14, -4
+ 554              		.loc 1 181 3 is_stmt 1 view .LVU144
+ 555              		.loc 1 181 20 is_stmt 0 view .LVU145
+ 556 0002 0368     		ldr	r3, [r0]
+ 557              		.loc 1 181 5 view .LVU146
+ 558 0004 104A     		ldr	r2, .L41
+ 559 0006 9342     		cmp	r3, r2
+ 560 0008 03D0     		beq	.L39
+ 561              		.loc 1 196 8 is_stmt 1 view .LVU147
+ 562              		.loc 1 196 10 is_stmt 0 view .LVU148
+ 563 000a 104A     		ldr	r2, .L41+4
+ 564 000c 9342     		cmp	r3, r2
+ 565 000e 0CD0     		beq	.L40
+ 566              	.LVL32:
+ 567              	.L35:
+ 568              		.loc 1 216 1 view .LVU149
+ 569 0010 10BD     		pop	{r4, pc}
+ 570              	.LVL33:
+ 571              	.L39:
+ 572              		.loc 1 187 5 is_stmt 1 view .LVU150
+ 573 0012 02F56442 		add	r2, r2, #58368
+ 574 0016 9369     		ldr	r3, [r2, #24]
+ 575 0018 23F40063 		bic	r3, r3, #2048
+ 576 001c 9361     		str	r3, [r2, #24]
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 11
+
+
+ 577              		.loc 1 190 5 view .LVU151
+ 578 001e 1920     		movs	r0, #25
+ 579              	.LVL34:
+ 580              		.loc 1 190 5 is_stmt 0 view .LVU152
+ 581 0020 0B4C     		ldr	r4, .L41+8
+ 582 0022 A047     		blx	r4
+ 583              	.LVL35:
+ 584              		.loc 1 191 5 is_stmt 1 view .LVU153
+ 585 0024 1B20     		movs	r0, #27
+ 586 0026 A047     		blx	r4
+ 587              	.LVL36:
+ 588 0028 F2E7     		b	.L35
+ 589              	.LVL37:
+ 590              	.L40:
+ 591              		.loc 1 202 5 view .LVU154
+ 592 002a 02F50332 		add	r2, r2, #134144
+ 593 002e D369     		ldr	r3, [r2, #28]
+ 594 0030 23F00203 		bic	r3, r3, #2
+ 595 0034 D361     		str	r3, [r2, #28]
+ 596              		.loc 1 208 5 view .LVU155
+ 597 0036 C021     		movs	r1, #192
+ 598 0038 0648     		ldr	r0, .L41+12
+ 599              	.LVL38:
+ 600              		.loc 1 208 5 is_stmt 0 view .LVU156
+ 601 003a 074B     		ldr	r3, .L41+16
+ 602 003c 9847     		blx	r3
+ 603              	.LVL39:
+ 604              		.loc 1 211 5 is_stmt 1 view .LVU157
+ 605 003e 1D20     		movs	r0, #29
+ 606 0040 034B     		ldr	r3, .L41+8
+ 607 0042 9847     		blx	r3
+ 608              	.LVL40:
+ 609              		.loc 1 216 1 is_stmt 0 view .LVU158
+ 610 0044 E4E7     		b	.L35
+ 611              	.L42:
+ 612 0046 00BF     		.align	2
+ 613              	.L41:
+ 614 0048 002C0140 		.word	1073818624
+ 615 004c 00040040 		.word	1073742848
+ 616 0050 00000000 		.word	HAL_NVIC_DisableIRQ
+ 617 0054 00080140 		.word	1073809408
+ 618 0058 00000000 		.word	HAL_GPIO_DeInit
+ 619              		.cfi_endproc
+ 620              	.LFE68:
+ 622              		.global	htim3
+ 623              		.global	htim1
+ 624              		.section	.bss.htim1,"aw",%nobits
+ 625              		.align	2
+ 626              		.set	.LANCHOR0,. + 0
+ 629              	htim1:
+ 630 0000 00000000 		.space	72
+ 630      00000000 
+ 630      00000000 
+ 630      00000000 
+ 630      00000000 
+ 631              		.section	.bss.htim3,"aw",%nobits
+ 632              		.align	2
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 12
+
+
+ 633              		.set	.LANCHOR1,. + 0
+ 636              	htim3:
+ 637 0000 00000000 		.space	72
+ 637      00000000 
+ 637      00000000 
+ 637      00000000 
+ 637      00000000 
+ 638              		.text
+ 639              	.Letext0:
+ 640              		.file 2 "../c:\\users\\miroslav\\desktop\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none-eabi\\in
+ 641              		.file 3 "../c:\\users\\miroslav\\desktop\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none-eabi\\in
+ 642              		.file 4 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 643              		.file 5 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 644              		.file 6 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 645              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 646              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 647              		.file 9 "../Core/Inc/tim.h"
+ 648              		.file 10 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
+ 649              		.file 11 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h"
+ 650              		.file 12 "../Core/Inc/main.h"
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s 			page 13
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 tim.c
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:16     .text.MX_TIM1_Init:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:24     .text.MX_TIM1_Init:0000000000000000 MX_TIM1_Init
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:144    .text.MX_TIM1_Init:0000000000000068 $d
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:154    .text.MX_TIM3_Init:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:161    .text.MX_TIM3_Init:0000000000000000 MX_TIM3_Init
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:350    .text.MX_TIM3_Init:00000000000000b0 $d
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:362    .text.HAL_TIM_Base_MspInit:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:369    .text.HAL_TIM_Base_MspInit:0000000000000000 HAL_TIM_Base_MspInit
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:523    .text.HAL_TIM_Base_MspInit:0000000000000098 $d
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:534    .text.HAL_TIM_Base_MspDeInit:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:541    .text.HAL_TIM_Base_MspDeInit:0000000000000000 HAL_TIM_Base_MspDeInit
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:614    .text.HAL_TIM_Base_MspDeInit:0000000000000048 $d
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:636    .bss.htim3:0000000000000000 htim3
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:629    .bss.htim1:0000000000000000 htim1
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:625    .bss.htim1:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\cca353Nr.s:632    .bss.htim3:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+HAL_TIM_Base_Init
+HAL_TIM_ConfigClockSource
+HAL_TIMEx_MasterConfigSynchronization
+Error_Handler
+HAL_TIM_IC_Init
+HAL_TIM_IC_ConfigChannel
+HAL_NVIC_SetPriority
+HAL_NVIC_EnableIRQ
+HAL_GPIO_Init
+HAL_NVIC_DisableIRQ
+HAL_GPIO_DeInit

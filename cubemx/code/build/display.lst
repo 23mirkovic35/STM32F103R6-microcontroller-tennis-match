@@ -1,0 +1,659 @@
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"display.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.display,"ax",%progbits
+  16              		.align	1
+  17              		.global	display
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	display:
+  25              	.LFB65:
+  26              		.file 1 "../Core/Src/display.c"
+   1:../Core/Src/display.c **** 
+  27              		.loc 1 22 15 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 08B5     		push	{r3, lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  36              		.loc 1 23 2 view .LVU1
+  37 0002 0248     		ldr	r0, .L3
+  38 0004 024B     		ldr	r3, .L3+4
+  39 0006 9847     		blx	r3
+  40              	.LVL0:
+  41              		.loc 1 24 1 is_stmt 0 view .LVU2
+  42 0008 08BD     		pop	{r3, pc}
+  43              	.L4:
+  44 000a 00BF     		.align	2
+  45              	.L3:
+  46 000c 00000000 		.word	htim1
+  47 0010 00000000 		.word	HAL_TIM_Base_Start_IT
+  48              		.cfi_endproc
+  49              	.LFE65:
+  51              		.section	.text.HAL_TIM_PeriodElapsedCallback,"ax",%progbits
+  52              		.align	1
+  53              		.global	HAL_TIM_PeriodElapsedCallback
+  54              		.syntax unified
+  55              		.thumb
+  56              		.thumb_func
+  57              		.fpu softvfp
+  59              	HAL_TIM_PeriodElapsedCallback:
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 2
+
+
+  60              	.LVL1:
+  61              	.LFB66:
+  62              		.loc 1 39 60 is_stmt 1 view -0
+  63              		.cfi_startproc
+  64              		@ args = 0, pretend = 0, frame = 0
+  65              		@ frame_needed = 0, uses_anonymous_args = 0
+  66              		@ link register save eliminated.
+  67              		.loc 1 40 2 view .LVU4
+  68              		.loc 1 40 9 is_stmt 0 view .LVU5
+  69 0000 0268     		ldr	r2, [r0]
+  70              		.loc 1 40 4 view .LVU6
+  71 0002 7B4B     		ldr	r3, .L23
+  72 0004 9A42     		cmp	r2, r3
+  73 0006 05D0     		beq	.L18
+  74              		.loc 1 76 2 is_stmt 1 view .LVU7
+  75              		.loc 1 76 10 is_stmt 0 view .LVU8
+  76 0008 0268     		ldr	r2, [r0]
+  77              		.loc 1 76 4 view .LVU9
+  78 000a 7A4B     		ldr	r3, .L23+4
+  79 000c 9A42     		cmp	r2, r3
+  80 000e 00F0E980 		beq	.L19
+  81 0012 7047     		bx	lr
+  82              	.L18:
+  83              		.loc 1 39 60 view .LVU10
+  84 0014 30B4     		push	{r4, r5}
+  85              	.LCFI1:
+  86              		.cfi_def_cfa_offset 8
+  87              		.cfi_offset 4, -8
+  88              		.cfi_offset 5, -4
+  89              		.loc 1 41 3 is_stmt 1 view .LVU11
+  90              		.loc 1 41 7 is_stmt 0 view .LVU12
+  91 0016 784A     		ldr	r2, .L23+8
+  92 0018 1368     		ldr	r3, [r2]
+  93 001a 0133     		adds	r3, r3, #1
+  94              		.loc 1 41 5 view .LVU13
+  95 001c 1360     		str	r3, [r2]
+  96 001e 642B     		cmp	r3, #100
+  97 0020 52D0     		beq	.L20
+  98              	.L7:
+  99              		.loc 1 51 3 is_stmt 1 view .LVU14
+ 100              		.loc 1 51 13 is_stmt 0 view .LVU15
+ 101 0022 764B     		ldr	r3, .L23+12
+ 102 0024 1B68     		ldr	r3, [r3]
+ 103              		.loc 1 51 5 view .LVU16
+ 104 0026 002B     		cmp	r3, #0
+ 105 0028 64D1     		bne	.L8
+ 106              		.loc 1 52 4 is_stmt 1 view .LVU17
+ 107              		.loc 1 52 34 is_stmt 0 view .LVU18
+ 108 002a 754C     		ldr	r4, .L23+16
+ 109 002c 2268     		ldr	r2, [r4]
+ 110 002e A3F13333 		sub	r3, r3, #858993459
+ 111 0032 A3FB0212 		umull	r1, r2, r3, r2
+ 112 0036 D208     		lsrs	r2, r2, #3
+ 113              		.loc 1 52 22 view .LVU19
+ 114 0038 7249     		ldr	r1, .L23+20
+ 115 003a 8A80     		strh	r2, [r1, #4]	@ movhi
+ 116              		.loc 1 53 4 is_stmt 1 view .LVU20
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 3
+
+
+ 117              		.loc 1 53 34 is_stmt 0 view .LVU21
+ 118 003c 2468     		ldr	r4, [r4]
+ 119 003e A3FB0452 		umull	r5, r2, r3, r4
+ 120 0042 D208     		lsrs	r2, r2, #3
+ 121 0044 02EB8202 		add	r2, r2, r2, lsl #2
+ 122 0048 A4EB4202 		sub	r2, r4, r2, lsl #1
+ 123              		.loc 1 53 22 view .LVU22
+ 124 004c CA80     		strh	r2, [r1, #6]	@ movhi
+ 125              		.loc 1 54 4 is_stmt 1 view .LVU23
+ 126              		.loc 1 54 36 is_stmt 0 view .LVU24
+ 127 004e 6E4C     		ldr	r4, .L23+24
+ 128 0050 2268     		ldr	r2, [r4]
+ 129 0052 A3FB0252 		umull	r5, r2, r3, r2
+ 130 0056 D208     		lsrs	r2, r2, #3
+ 131              		.loc 1 54 22 view .LVU25
+ 132 0058 0A80     		strh	r2, [r1]	@ movhi
+ 133              		.loc 1 55 4 is_stmt 1 view .LVU26
+ 134              		.loc 1 55 36 is_stmt 0 view .LVU27
+ 135 005a 2268     		ldr	r2, [r4]
+ 136 005c A3FB0243 		umull	r4, r3, r3, r2
+ 137 0060 DB08     		lsrs	r3, r3, #3
+ 138 0062 03EB8303 		add	r3, r3, r3, lsl #2
+ 139 0066 A2EB4303 		sub	r3, r2, r3, lsl #1
+ 140              		.loc 1 55 22 view .LVU28
+ 141 006a 4B80     		strh	r3, [r1, #2]	@ movhi
+ 142              	.L9:
+ 143              		.loc 1 68 3 is_stmt 1 view .LVU29
+ 144              		.loc 1 68 17 is_stmt 0 view .LVU30
+ 145 006c 6749     		ldr	r1, .L23+28
+ 146 006e 0B88     		ldrh	r3, [r1]
+ 147 0070 0133     		adds	r3, r3, #1
+ 148              		.loc 1 68 23 view .LVU31
+ 149 0072 5A42     		rsbs	r2, r3, #0
+ 150 0074 03F00303 		and	r3, r3, #3
+ 151 0078 02F00302 		and	r2, r2, #3
+ 152 007c 58BF     		it	pl
+ 153 007e 5342     		rsbpl	r3, r2, #0
+ 154              		.loc 1 68 8 view .LVU32
+ 155 0080 9BB2     		uxth	r3, r3
+ 156 0082 0B80     		strh	r3, [r1]	@ movhi
+ 157              		.loc 1 69 3 is_stmt 1 view .LVU33
+ 158              		.loc 1 69 14 is_stmt 0 view .LVU34
+ 159 0084 624A     		ldr	r2, .L23+32
+ 160 0086 D168     		ldr	r1, [r2, #12]
+ 161 0088 21F47061 		bic	r1, r1, #3840
+ 162 008c D160     		str	r1, [r2, #12]
+ 163              		.loc 1 70 3 is_stmt 1 view .LVU35
+ 164              		.loc 1 70 14 is_stmt 0 view .LVU36
+ 165 008e D168     		ldr	r1, [r2, #12]
+ 166 0090 21F0FF01 		bic	r1, r1, #255
+ 167 0094 D160     		str	r1, [r2, #12]
+ 168              		.loc 1 71 3 is_stmt 1 view .LVU37
+ 169              		.loc 1 71 14 is_stmt 0 view .LVU38
+ 170 0096 D168     		ldr	r1, [r2, #12]
+ 171              		.loc 1 71 41 view .LVU39
+ 172 0098 5A4C     		ldr	r4, .L23+20
+ 173 009a 34F813C0 		ldrh	ip, [r4, r3, lsl #1]
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 4
+
+
+ 174              		.loc 1 71 26 view .LVU40
+ 175 009e 5D4C     		ldr	r4, .L23+36
+ 176 00a0 14F80CC0 		ldrb	ip, [r4, ip]	@ zero_extendqisi2
+ 177              		.loc 1 71 14 view .LVU41
+ 178 00a4 41EA0C01 		orr	r1, r1, ip
+ 179 00a8 D160     		str	r1, [r2, #12]
+ 180              		.loc 1 72 3 is_stmt 1 view .LVU42
+ 181              		.loc 1 72 14 is_stmt 0 view .LVU43
+ 182 00aa D168     		ldr	r1, [r2, #12]
+ 183              		.loc 1 72 32 view .LVU44
+ 184 00ac 0833     		adds	r3, r3, #8
+ 185              		.loc 1 72 25 view .LVU45
+ 186 00ae 4FF0010C 		mov	ip, #1
+ 187 00b2 0CFA03F3 		lsl	r3, ip, r3
+ 188              		.loc 1 72 14 view .LVU46
+ 189 00b6 0B43     		orrs	r3, r3, r1
+ 190 00b8 D360     		str	r3, [r2, #12]
+ 191              		.loc 1 76 2 is_stmt 1 view .LVU47
+ 192              		.loc 1 76 10 is_stmt 0 view .LVU48
+ 193 00ba 0268     		ldr	r2, [r0]
+ 194              		.loc 1 76 4 view .LVU49
+ 195 00bc 4D4B     		ldr	r3, .L23+4
+ 196 00be 9A42     		cmp	r2, r3
+ 197 00c0 00F08B80 		beq	.L21
+ 198              	.L5:
+ 199              		.loc 1 79 1 view .LVU50
+ 200 00c4 30BC     		pop	{r4, r5}
+ 201              	.LCFI2:
+ 202              		.cfi_remember_state
+ 203              		.cfi_restore 5
+ 204              		.cfi_restore 4
+ 205              		.cfi_def_cfa_offset 0
+ 206 00c6 7047     		bx	lr
+ 207              	.L20:
+ 208              	.LCFI3:
+ 209              		.cfi_restore_state
+ 210              		.loc 1 42 4 is_stmt 1 view .LVU51
+ 211              		.loc 1 42 12 is_stmt 0 view .LVU52
+ 212 00c8 1346     		mov	r3, r2
+ 213 00ca 0022     		movs	r2, #0
+ 214 00cc 1A60     		str	r2, [r3]
+ 215              		.loc 1 43 4 is_stmt 1 view .LVU53
+ 216              		.loc 1 43 8 is_stmt 0 view .LVU54
+ 217 00ce 4C4A     		ldr	r2, .L23+16
+ 218 00d0 1368     		ldr	r3, [r2]
+ 219 00d2 0133     		adds	r3, r3, #1
+ 220              		.loc 1 43 6 view .LVU55
+ 221 00d4 1360     		str	r3, [r2]
+ 222 00d6 3C2B     		cmp	r3, #60
+ 223 00d8 A3D1     		bne	.L7
+ 224              		.loc 1 44 5 is_stmt 1 view .LVU56
+ 225              		.loc 1 44 15 is_stmt 0 view .LVU57
+ 226 00da 1346     		mov	r3, r2
+ 227 00dc 0022     		movs	r2, #0
+ 228 00de 1A60     		str	r2, [r3]
+ 229              		.loc 1 45 5 is_stmt 1 view .LVU58
+ 230              		.loc 1 45 9 is_stmt 0 view .LVU59
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 5
+
+
+ 231 00e0 494A     		ldr	r2, .L23+24
+ 232 00e2 1368     		ldr	r3, [r2]
+ 233 00e4 0133     		adds	r3, r3, #1
+ 234              		.loc 1 45 7 view .LVU60
+ 235 00e6 1360     		str	r3, [r2]
+ 236 00e8 3C2B     		cmp	r3, #60
+ 237 00ea 9AD1     		bne	.L7
+ 238              		.loc 1 46 6 is_stmt 1 view .LVU61
+ 239              		.loc 1 46 18 is_stmt 0 view .LVU62
+ 240 00ec 1346     		mov	r3, r2
+ 241 00ee 0022     		movs	r2, #0
+ 242 00f0 1A60     		str	r2, [r3]
+ 243 00f2 96E7     		b	.L7
+ 244              	.L8:
+ 245              		.loc 1 56 9 is_stmt 1 view .LVU63
+ 246              		.loc 1 56 18 is_stmt 0 view .LVU64
+ 247 00f4 414B     		ldr	r3, .L23+12
+ 248 00f6 1B68     		ldr	r3, [r3]
+ 249              		.loc 1 56 11 view .LVU65
+ 250 00f8 012B     		cmp	r3, #1
+ 251 00fa 3AD0     		beq	.L22
+ 252              		.loc 1 61 9 is_stmt 1 view .LVU66
+ 253              		.loc 1 61 19 is_stmt 0 view .LVU67
+ 254 00fc 3F4B     		ldr	r3, .L23+12
+ 255 00fe 1B68     		ldr	r3, [r3]
+ 256              		.loc 1 61 11 view .LVU68
+ 257 0100 022B     		cmp	r3, #2
+ 258 0102 B3D1     		bne	.L9
+ 259              		.loc 1 62 4 is_stmt 1 view .LVU69
+ 260              		.loc 1 62 22 is_stmt 0 view .LVU70
+ 261 0104 444D     		ldr	r5, .L23+40
+ 262 0106 2A78     		ldrb	r2, [r5]	@ zero_extendqisi2
+ 263 0108 D2B2     		uxtb	r2, r2
+ 264 010a 3E49     		ldr	r1, .L23+20
+ 265 010c 434B     		ldr	r3, .L23+44
+ 266 010e A3FB02C4 		umull	ip, r4, r3, r2
+ 267 0112 E408     		lsrs	r4, r4, #3
+ 268 0114 04EB8404 		add	r4, r4, r4, lsl #2
+ 269 0118 A2EB4402 		sub	r2, r2, r4, lsl #1
+ 270 011c D2B2     		uxtb	r2, r2
+ 271 011e 4A80     		strh	r2, [r1, #2]	@ movhi
+ 272              		.loc 1 63 4 is_stmt 1 view .LVU71
+ 273              		.loc 1 63 22 is_stmt 0 view .LVU72
+ 274 0120 2A78     		ldrb	r2, [r5]	@ zero_extendqisi2
+ 275 0122 D2B2     		uxtb	r2, r2
+ 276 0124 A3FB0242 		umull	r4, r2, r3, r2
+ 277 0128 D208     		lsrs	r2, r2, #3
+ 278 012a A3FB0254 		umull	r5, r4, r3, r2
+ 279 012e E408     		lsrs	r4, r4, #3
+ 280 0130 04EB8404 		add	r4, r4, r4, lsl #2
+ 281 0134 A2EB4402 		sub	r2, r2, r4, lsl #1
+ 282 0138 D2B2     		uxtb	r2, r2
+ 283 013a 0A80     		strh	r2, [r1]	@ movhi
+ 284              		.loc 1 64 4 is_stmt 1 view .LVU73
+ 285              		.loc 1 64 22 is_stmt 0 view .LVU74
+ 286 013c 384D     		ldr	r5, .L23+48
+ 287 013e 2A78     		ldrb	r2, [r5]	@ zero_extendqisi2
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 6
+
+
+ 288 0140 D2B2     		uxtb	r2, r2
+ 289 0142 A3FB02C4 		umull	ip, r4, r3, r2
+ 290 0146 E408     		lsrs	r4, r4, #3
+ 291 0148 04EB8404 		add	r4, r4, r4, lsl #2
+ 292 014c A2EB4402 		sub	r2, r2, r4, lsl #1
+ 293 0150 D2B2     		uxtb	r2, r2
+ 294 0152 CA80     		strh	r2, [r1, #6]	@ movhi
+ 295              		.loc 1 65 4 is_stmt 1 view .LVU75
+ 296              		.loc 1 65 22 is_stmt 0 view .LVU76
+ 297 0154 2A78     		ldrb	r2, [r5]	@ zero_extendqisi2
+ 298 0156 D2B2     		uxtb	r2, r2
+ 299 0158 A3FB0242 		umull	r4, r2, r3, r2
+ 300 015c D208     		lsrs	r2, r2, #3
+ 301 015e A3FB0243 		umull	r4, r3, r3, r2
+ 302 0162 DB08     		lsrs	r3, r3, #3
+ 303 0164 03EB8303 		add	r3, r3, r3, lsl #2
+ 304 0168 A2EB4303 		sub	r3, r2, r3, lsl #1
+ 305 016c DBB2     		uxtb	r3, r3
+ 306 016e 8B80     		strh	r3, [r1, #4]	@ movhi
+ 307 0170 7CE7     		b	.L9
+ 308              	.L22:
+ 309              		.loc 1 57 4 is_stmt 1 view .LVU77
+ 310              		.loc 1 57 22 is_stmt 0 view .LVU78
+ 311 0172 2C4D     		ldr	r5, .L23+52
+ 312 0174 2A88     		ldrh	r2, [r5]
+ 313 0176 92B2     		uxth	r2, r2
+ 314 0178 2249     		ldr	r1, .L23+20
+ 315 017a 03F1CC33 		add	r3, r3, #-858993460
+ 316 017e A3FB02C4 		umull	ip, r4, r3, r2
+ 317 0182 E408     		lsrs	r4, r4, #3
+ 318 0184 04EB8404 		add	r4, r4, r4, lsl #2
+ 319 0188 A2EB4402 		sub	r2, r2, r4, lsl #1
+ 320 018c 4A80     		strh	r2, [r1, #2]	@ movhi
+ 321              		.loc 1 58 4 is_stmt 1 view .LVU79
+ 322              		.loc 1 58 22 is_stmt 0 view .LVU80
+ 323 018e 2A88     		ldrh	r2, [r5]
+ 324 0190 92B2     		uxth	r2, r2
+ 325 0192 A3FB0242 		umull	r4, r2, r3, r2
+ 326 0196 D208     		lsrs	r2, r2, #3
+ 327 0198 A3FB0254 		umull	r5, r4, r3, r2
+ 328 019c E408     		lsrs	r4, r4, #3
+ 329 019e 04EB8404 		add	r4, r4, r4, lsl #2
+ 330 01a2 A2EB4402 		sub	r2, r2, r4, lsl #1
+ 331 01a6 0A80     		strh	r2, [r1]	@ movhi
+ 332              		.loc 1 59 4 is_stmt 1 view .LVU81
+ 333              		.loc 1 59 22 is_stmt 0 view .LVU82
+ 334 01a8 1F4D     		ldr	r5, .L23+56
+ 335 01aa 2A88     		ldrh	r2, [r5]
+ 336 01ac 92B2     		uxth	r2, r2
+ 337 01ae A3FB02C4 		umull	ip, r4, r3, r2
+ 338 01b2 E408     		lsrs	r4, r4, #3
+ 339 01b4 04EB8404 		add	r4, r4, r4, lsl #2
+ 340 01b8 A2EB4402 		sub	r2, r2, r4, lsl #1
+ 341 01bc CA80     		strh	r2, [r1, #6]	@ movhi
+ 342              		.loc 1 60 4 is_stmt 1 view .LVU83
+ 343              		.loc 1 60 22 is_stmt 0 view .LVU84
+ 344 01be 2A88     		ldrh	r2, [r5]
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 7
+
+
+ 345 01c0 92B2     		uxth	r2, r2
+ 346 01c2 A3FB0242 		umull	r4, r2, r3, r2
+ 347 01c6 D208     		lsrs	r2, r2, #3
+ 348 01c8 A3FB0243 		umull	r4, r3, r3, r2
+ 349 01cc DB08     		lsrs	r3, r3, #3
+ 350 01ce 03EB8303 		add	r3, r3, r3, lsl #2
+ 351 01d2 A2EB4303 		sub	r3, r2, r3, lsl #1
+ 352 01d6 8B80     		strh	r3, [r1, #4]	@ movhi
+ 353 01d8 48E7     		b	.L9
+ 354              	.L21:
+ 355              		.loc 1 77 3 is_stmt 1 view .LVU85
+ 356 01da 144A     		ldr	r2, .L23+60
+ 357 01dc 1368     		ldr	r3, [r2]
+ 358 01de 0133     		adds	r3, r3, #1
+ 359 01e0 1360     		str	r3, [r2]
+ 360              		.loc 1 79 1 is_stmt 0 view .LVU86
+ 361 01e2 6FE7     		b	.L5
+ 362              	.L19:
+ 363              	.LCFI4:
+ 364              		.cfi_def_cfa_offset 0
+ 365              		.cfi_restore 4
+ 366              		.cfi_restore 5
+ 367              		.loc 1 77 3 is_stmt 1 view .LVU87
+ 368 01e4 114A     		ldr	r2, .L23+60
+ 369 01e6 1368     		ldr	r3, [r2]
+ 370 01e8 0133     		adds	r3, r3, #1
+ 371 01ea 1360     		str	r3, [r2]
+ 372 01ec 7047     		bx	lr
+ 373              	.L24:
+ 374 01ee 00BF     		.align	2
+ 375              	.L23:
+ 376 01f0 002C0140 		.word	1073818624
+ 377 01f4 00040040 		.word	1073742848
+ 378 01f8 00000000 		.word	.LANCHOR0
+ 379 01fc 00000000 		.word	state
+ 380 0200 00000000 		.word	.LANCHOR1
+ 381 0204 00000000 		.word	.LANCHOR3
+ 382 0208 00000000 		.word	.LANCHOR2
+ 383 020c 00000000 		.word	.LANCHOR4
+ 384 0210 00100140 		.word	1073811456
+ 385 0214 00000000 		.word	.LANCHOR5
+ 386 0218 00000000 		.word	player1_gem
+ 387 021c CDCCCCCC 		.word	-858993459
+ 388 0220 00000000 		.word	player2_gem
+ 389 0224 00000000 		.word	player1_point
+ 390 0228 00000000 		.word	player2_point
+ 391 022c 00000000 		.word	.LANCHOR6
+ 392              		.cfi_endproc
+ 393              	.LFE66:
+ 395              		.section	.text.HAL_TIM_IC_CaptureCallback,"ax",%progbits
+ 396              		.align	1
+ 397              		.global	HAL_TIM_IC_CaptureCallback
+ 398              		.syntax unified
+ 399              		.thumb
+ 400              		.thumb_func
+ 401              		.fpu softvfp
+ 403              	HAL_TIM_IC_CaptureCallback:
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 8
+
+
+ 404              	.LVL2:
+ 405              	.LFB67:
+ 406              		.loc 1 81 57 view -0
+ 407              		.cfi_startproc
+ 408              		@ args = 0, pretend = 0, frame = 0
+ 409              		@ frame_needed = 0, uses_anonymous_args = 0
+ 410              		@ link register save eliminated.
+ 411              		.loc 1 82 2 view .LVU89
+ 412              		.loc 1 82 9 is_stmt 0 view .LVU90
+ 413 0000 0268     		ldr	r2, [r0]
+ 414              		.loc 1 82 4 view .LVU91
+ 415 0002 1B4B     		ldr	r3, .L31
+ 416 0004 9A42     		cmp	r2, r3
+ 417 0006 00D0     		beq	.L29
+ 418              	.L25:
+ 419              		.loc 1 96 1 view .LVU92
+ 420 0008 7047     		bx	lr
+ 421              	.L29:
+ 422              		.loc 1 83 3 is_stmt 1 view .LVU93
+ 423              		.loc 1 83 10 is_stmt 0 view .LVU94
+ 424 000a 037F     		ldrb	r3, [r0, #28]	@ zero_extendqisi2
+ 425              		.loc 1 83 5 view .LVU95
+ 426 000c 012B     		cmp	r3, #1
+ 427 000e 25D0     		beq	.L30
+ 428              	.L27:
+ 429              		.loc 1 87 3 is_stmt 1 view .LVU96
+ 430              		.loc 1 87 5 is_stmt 0 view .LVU97
+ 431 0010 022B     		cmp	r3, #2
+ 432 0012 F9D1     		bne	.L25
+ 433              		.loc 1 88 4 is_stmt 1 view .LVU98
+ 434              		.loc 1 88 14 is_stmt 0 view .LVU99
+ 435 0014 164B     		ldr	r3, .L31
+ 436 0016 9B6B     		ldr	r3, [r3, #56]
+ 437              		.loc 1 88 8 view .LVU100
+ 438 0018 9BB2     		uxth	r3, r3
+ 439 001a 164A     		ldr	r2, .L31+4
+ 440 001c 1380     		strh	r3, [r2]	@ movhi
+ 441              		.loc 1 89 4 is_stmt 1 view .LVU101
+ 442              		.loc 1 89 22 is_stmt 0 view .LVU102
+ 443 001e 1388     		ldrh	r3, [r2]
+ 444 0020 9BB2     		uxth	r3, r3
+ 445              		.loc 1 89 35 view .LVU103
+ 446 0022 154A     		ldr	r2, .L31+8
+ 447 0024 1268     		ldr	r2, [r2]
+ 448 0026 02EB8202 		add	r2, r2, r2, lsl #2
+ 449              		.loc 1 89 22 view .LVU104
+ 450 002a 03EB4203 		add	r3, r3, r2, lsl #1
+ 451              		.loc 1 89 52 view .LVU105
+ 452 002e 134A     		ldr	r2, .L31+12
+ 453 0030 1288     		ldrh	r2, [r2]
+ 454 0032 92B2     		uxth	r2, r2
+ 455 0034 9B1A     		subs	r3, r3, r2
+ 456              		.loc 1 89 14 view .LVU106
+ 457 0036 124A     		ldr	r2, .L31+16
+ 458 0038 1360     		str	r3, [r2]
+ 459              		.loc 1 90 4 is_stmt 1 view .LVU107
+ 460              		.loc 1 90 17 is_stmt 0 view .LVU108
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 9
+
+
+ 461 003a 1368     		ldr	r3, [r2]
+ 462              		.loc 1 90 6 view .LVU109
+ 463 003c B3F5FA6F 		cmp	r3, #2000
+ 464 0040 08D3     		bcc	.L28
+ 465              		.loc 1 91 5 is_stmt 1 view .LVU110
+ 466              		.loc 1 91 63 is_stmt 0 view .LVU111
+ 467 0042 0023     		movs	r3, #0
+ 468 0044 0F4A     		ldr	r2, .L31+20
+ 469 0046 1380     		strh	r3, [r2]	@ movhi
+ 470              		.loc 1 91 47 view .LVU112
+ 471 0048 0F4A     		ldr	r2, .L31+24
+ 472 004a 1370     		strb	r3, [r2]
+ 473              		.loc 1 91 33 view .LVU113
+ 474 004c 0F4A     		ldr	r2, .L31+28
+ 475 004e 1380     		strh	r3, [r2]	@ movhi
+ 476              		.loc 1 91 17 view .LVU114
+ 477 0050 0F4A     		ldr	r2, .L31+32
+ 478 0052 1370     		strb	r3, [r2]
+ 479              	.L28:
+ 480              		.loc 1 93 4 is_stmt 1 view .LVU115
+ 481              		.loc 1 93 13 is_stmt 0 view .LVU116
+ 482 0054 084B     		ldr	r3, .L31+8
+ 483 0056 0022     		movs	r2, #0
+ 484 0058 1A60     		str	r2, [r3]
+ 485              		.loc 1 96 1 view .LVU117
+ 486 005a D5E7     		b	.L25
+ 487              	.L30:
+ 488              		.loc 1 84 4 is_stmt 1 view .LVU118
+ 489              		.loc 1 84 16 is_stmt 0 view .LVU119
+ 490 005c 044A     		ldr	r2, .L31
+ 491 005e 526B     		ldr	r2, [r2, #52]
+ 492              		.loc 1 84 10 view .LVU120
+ 493 0060 92B2     		uxth	r2, r2
+ 494 0062 0649     		ldr	r1, .L31+12
+ 495 0064 0A80     		strh	r2, [r1]	@ movhi
+ 496              		.loc 1 85 4 is_stmt 1 view .LVU121
+ 497              		.loc 1 85 13 is_stmt 0 view .LVU122
+ 498 0066 044A     		ldr	r2, .L31+8
+ 499 0068 0021     		movs	r1, #0
+ 500 006a 1160     		str	r1, [r2]
+ 501 006c D0E7     		b	.L27
+ 502              	.L32:
+ 503 006e 00BF     		.align	2
+ 504              	.L31:
+ 505 0070 00040040 		.word	1073742848
+ 506 0074 00000000 		.word	.LANCHOR8
+ 507 0078 00000000 		.word	.LANCHOR6
+ 508 007c 00000000 		.word	.LANCHOR7
+ 509 0080 00000000 		.word	.LANCHOR9
+ 510 0084 00000000 		.word	player2_point
+ 511 0088 00000000 		.word	player2_gem
+ 512 008c 00000000 		.word	player1_point
+ 513 0090 00000000 		.word	player1_gem
+ 514              		.cfi_endproc
+ 515              	.LFE67:
+ 517              		.global	hold_time
+ 518              		.global	end
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 10
+
+
+ 519              		.global	start
+ 520              		.global	overflow
+ 521              		.global	timer_minut
+ 522              		.global	timer_sec
+ 523              		.global	counter
+ 524              		.global	curr
+ 525              		.global	display_number
+ 526              		.global	seven_seg
+ 527              		.section	.bss.counter,"aw",%nobits
+ 528              		.align	2
+ 529              		.set	.LANCHOR0,. + 0
+ 532              	counter:
+ 533 0000 00000000 		.space	4
+ 534              		.section	.bss.curr,"aw",%nobits
+ 535              		.align	1
+ 536              		.set	.LANCHOR4,. + 0
+ 539              	curr:
+ 540 0000 0000     		.space	2
+ 541              		.section	.bss.display_number,"aw",%nobits
+ 542              		.align	2
+ 543              		.set	.LANCHOR3,. + 0
+ 546              	display_number:
+ 547 0000 00000000 		.space	8
+ 547      00000000 
+ 548              		.section	.bss.end,"aw",%nobits
+ 549              		.align	1
+ 550              		.set	.LANCHOR8,. + 0
+ 553              	end:
+ 554 0000 0000     		.space	2
+ 555              		.section	.bss.hold_time,"aw",%nobits
+ 556              		.align	2
+ 557              		.set	.LANCHOR9,. + 0
+ 560              	hold_time:
+ 561 0000 00000000 		.space	4
+ 562              		.section	.bss.overflow,"aw",%nobits
+ 563              		.align	2
+ 564              		.set	.LANCHOR6,. + 0
+ 567              	overflow:
+ 568 0000 00000000 		.space	4
+ 569              		.section	.bss.start,"aw",%nobits
+ 570              		.align	1
+ 571              		.set	.LANCHOR7,. + 0
+ 574              	start:
+ 575 0000 0000     		.space	2
+ 576              		.section	.bss.timer_minut,"aw",%nobits
+ 577              		.align	2
+ 578              		.set	.LANCHOR2,. + 0
+ 581              	timer_minut:
+ 582 0000 00000000 		.space	4
+ 583              		.section	.bss.timer_sec,"aw",%nobits
+ 584              		.align	2
+ 585              		.set	.LANCHOR1,. + 0
+ 588              	timer_sec:
+ 589 0000 00000000 		.space	4
+ 590              		.section	.data.seven_seg,"aw"
+ 591              		.align	2
+ 592              		.set	.LANCHOR5,. + 0
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 11
+
+
+ 595              	seven_seg:
+ 596 0000 81CF9286 		.ascii	"\201\317\222\206\314\244\240\217\200\204"
+ 596      CCA4A08F 
+ 596      8084
+ 597              		.text
+ 598              	.Letext0:
+ 599              		.file 2 "../c:\\users\\miroslav\\desktop\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none-eabi\\in
+ 600              		.file 3 "../c:\\users\\miroslav\\desktop\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none-eabi\\in
+ 601              		.file 4 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 602              		.file 5 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 603              		.file 6 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 604              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 605              		.file 8 "../Core/Inc/tim.h"
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s 			page 12
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 display.c
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:16     .text.display:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:24     .text.display:0000000000000000 display
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:46     .text.display:000000000000000c $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:52     .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:59     .text.HAL_TIM_PeriodElapsedCallback:0000000000000000 HAL_TIM_PeriodElapsedCallback
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:376    .text.HAL_TIM_PeriodElapsedCallback:00000000000001f0 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:396    .text.HAL_TIM_IC_CaptureCallback:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:403    .text.HAL_TIM_IC_CaptureCallback:0000000000000000 HAL_TIM_IC_CaptureCallback
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:505    .text.HAL_TIM_IC_CaptureCallback:0000000000000070 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:560    .bss.hold_time:0000000000000000 hold_time
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:553    .bss.end:0000000000000000 end
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:574    .bss.start:0000000000000000 start
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:567    .bss.overflow:0000000000000000 overflow
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:581    .bss.timer_minut:0000000000000000 timer_minut
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:588    .bss.timer_sec:0000000000000000 timer_sec
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:532    .bss.counter:0000000000000000 counter
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:539    .bss.curr:0000000000000000 curr
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:546    .bss.display_number:0000000000000000 display_number
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:595    .data.seven_seg:0000000000000000 seven_seg
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:528    .bss.counter:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:535    .bss.curr:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:542    .bss.display_number:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:549    .bss.end:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:556    .bss.hold_time:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:563    .bss.overflow:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:570    .bss.start:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:577    .bss.timer_minut:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:584    .bss.timer_sec:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccoRAAdV.s:591    .data.seven_seg:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+htim1
+HAL_TIM_Base_Start_IT
+state
+player1_gem
+player2_gem
+player1_point
+player2_point

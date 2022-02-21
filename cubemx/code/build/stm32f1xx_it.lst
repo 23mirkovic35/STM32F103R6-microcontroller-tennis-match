@@ -1,0 +1,871 @@
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"stm32f1xx_it.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.NMI_Handler,"ax",%progbits
+  16              		.align	1
+  17              		.global	NMI_Handler
+  18              		.arch armv7-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	NMI_Handler:
+  25              	.LFB65:
+  26              		.file 1 "../Core/Src/stm32f1xx_it.c"
+   1:../Core/Src/stm32f1xx_it.c **** 
+  27              		.loc 1 72 1 view -0
+  28              		.cfi_startproc
+  29              		@ Volatile: function does not return.
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.L2:
+  34              		.loc 1 77 3 discriminator 1 view .LVU1
+  35              		.loc 1 79 3 discriminator 1 view .LVU2
+  36              		.loc 1 77 9 discriminator 1 view .LVU3
+  37 0000 FEE7     		b	.L2
+  38              		.cfi_endproc
+  39              	.LFE65:
+  41              		.section	.text.HardFault_Handler,"ax",%progbits
+  42              		.align	1
+  43              		.global	HardFault_Handler
+  44              		.syntax unified
+  45              		.thumb
+  46              		.thumb_func
+  47              		.fpu softvfp
+  49              	HardFault_Handler:
+  50              	.LFB66:
+  51              		.loc 1 87 1 view -0
+  52              		.cfi_startproc
+  53              		@ Volatile: function does not return.
+  54              		@ args = 0, pretend = 0, frame = 0
+  55              		@ frame_needed = 0, uses_anonymous_args = 0
+  56              		@ link register save eliminated.
+  57              	.L4:
+  58              		.loc 1 91 3 discriminator 1 view .LVU5
+  59              		.loc 1 95 3 discriminator 1 view .LVU6
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 2
+
+
+  60              		.loc 1 91 9 discriminator 1 view .LVU7
+  61 0000 FEE7     		b	.L4
+  62              		.cfi_endproc
+  63              	.LFE66:
+  65              		.section	.text.MemManage_Handler,"ax",%progbits
+  66              		.align	1
+  67              		.global	MemManage_Handler
+  68              		.syntax unified
+  69              		.thumb
+  70              		.thumb_func
+  71              		.fpu softvfp
+  73              	MemManage_Handler:
+  74              	.LFB67:
+  75              		.loc 1 102 1 view -0
+  76              		.cfi_startproc
+  77              		@ Volatile: function does not return.
+  78              		@ args = 0, pretend = 0, frame = 0
+  79              		@ frame_needed = 0, uses_anonymous_args = 0
+  80              		@ link register save eliminated.
+  81              	.L6:
+  82              		.loc 1 106 3 discriminator 1 view .LVU9
+  83              		.loc 1 110 3 discriminator 1 view .LVU10
+  84              		.loc 1 106 9 discriminator 1 view .LVU11
+  85 0000 FEE7     		b	.L6
+  86              		.cfi_endproc
+  87              	.LFE67:
+  89              		.section	.text.BusFault_Handler,"ax",%progbits
+  90              		.align	1
+  91              		.global	BusFault_Handler
+  92              		.syntax unified
+  93              		.thumb
+  94              		.thumb_func
+  95              		.fpu softvfp
+  97              	BusFault_Handler:
+  98              	.LFB68:
+  99              		.loc 1 117 1 view -0
+ 100              		.cfi_startproc
+ 101              		@ Volatile: function does not return.
+ 102              		@ args = 0, pretend = 0, frame = 0
+ 103              		@ frame_needed = 0, uses_anonymous_args = 0
+ 104              		@ link register save eliminated.
+ 105              	.L8:
+ 106              		.loc 1 121 3 discriminator 1 view .LVU13
+ 107              		.loc 1 125 3 discriminator 1 view .LVU14
+ 108              		.loc 1 121 9 discriminator 1 view .LVU15
+ 109 0000 FEE7     		b	.L8
+ 110              		.cfi_endproc
+ 111              	.LFE68:
+ 113              		.section	.text.UsageFault_Handler,"ax",%progbits
+ 114              		.align	1
+ 115              		.global	UsageFault_Handler
+ 116              		.syntax unified
+ 117              		.thumb
+ 118              		.thumb_func
+ 119              		.fpu softvfp
+ 121              	UsageFault_Handler:
+ 122              	.LFB69:
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 3
+
+
+ 123              		.loc 1 132 1 view -0
+ 124              		.cfi_startproc
+ 125              		@ Volatile: function does not return.
+ 126              		@ args = 0, pretend = 0, frame = 0
+ 127              		@ frame_needed = 0, uses_anonymous_args = 0
+ 128              		@ link register save eliminated.
+ 129              	.L10:
+ 130              		.loc 1 136 3 discriminator 1 view .LVU17
+ 131              		.loc 1 140 3 discriminator 1 view .LVU18
+ 132              		.loc 1 136 9 discriminator 1 view .LVU19
+ 133 0000 FEE7     		b	.L10
+ 134              		.cfi_endproc
+ 135              	.LFE69:
+ 137              		.section	.text.SVC_Handler,"ax",%progbits
+ 138              		.align	1
+ 139              		.global	SVC_Handler
+ 140              		.syntax unified
+ 141              		.thumb
+ 142              		.thumb_func
+ 143              		.fpu softvfp
+ 145              	SVC_Handler:
+ 146              	.LFB70:
+ 147              		.loc 1 147 1 view -0
+ 148              		.cfi_startproc
+ 149              		@ args = 0, pretend = 0, frame = 0
+ 150              		@ frame_needed = 0, uses_anonymous_args = 0
+ 151              		@ link register save eliminated.
+ 152              		.loc 1 154 1 view .LVU21
+ 153 0000 7047     		bx	lr
+ 154              		.cfi_endproc
+ 155              	.LFE70:
+ 157              		.section	.text.DebugMon_Handler,"ax",%progbits
+ 158              		.align	1
+ 159              		.global	DebugMon_Handler
+ 160              		.syntax unified
+ 161              		.thumb
+ 162              		.thumb_func
+ 163              		.fpu softvfp
+ 165              	DebugMon_Handler:
+ 166              	.LFB71:
+ 167              		.loc 1 160 1 view -0
+ 168              		.cfi_startproc
+ 169              		@ args = 0, pretend = 0, frame = 0
+ 170              		@ frame_needed = 0, uses_anonymous_args = 0
+ 171              		@ link register save eliminated.
+ 172              		.loc 1 167 1 view .LVU23
+ 173 0000 7047     		bx	lr
+ 174              		.cfi_endproc
+ 175              	.LFE71:
+ 177              		.section	.text.PendSV_Handler,"ax",%progbits
+ 178              		.align	1
+ 179              		.global	PendSV_Handler
+ 180              		.syntax unified
+ 181              		.thumb
+ 182              		.thumb_func
+ 183              		.fpu softvfp
+ 185              	PendSV_Handler:
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 4
+
+
+ 186              	.LFB72:
+ 187              		.loc 1 173 1 view -0
+ 188              		.cfi_startproc
+ 189              		@ args = 0, pretend = 0, frame = 0
+ 190              		@ frame_needed = 0, uses_anonymous_args = 0
+ 191              		@ link register save eliminated.
+ 192              		.loc 1 180 1 view .LVU25
+ 193 0000 7047     		bx	lr
+ 194              		.cfi_endproc
+ 195              	.LFE72:
+ 197              		.section	.text.SysTick_Handler,"ax",%progbits
+ 198              		.align	1
+ 199              		.global	SysTick_Handler
+ 200              		.syntax unified
+ 201              		.thumb
+ 202              		.thumb_func
+ 203              		.fpu softvfp
+ 205              	SysTick_Handler:
+ 206              	.LFB73:
+ 207              		.loc 1 186 1 view -0
+ 208              		.cfi_startproc
+ 209              		@ args = 0, pretend = 0, frame = 0
+ 210              		@ frame_needed = 0, uses_anonymous_args = 0
+ 211 0000 08B5     		push	{r3, lr}
+ 212              	.LCFI0:
+ 213              		.cfi_def_cfa_offset 8
+ 214              		.cfi_offset 3, -8
+ 215              		.cfi_offset 14, -4
+ 216              		.loc 1 190 3 view .LVU27
+ 217 0002 014B     		ldr	r3, .L16
+ 218 0004 9847     		blx	r3
+ 219              	.LVL0:
+ 220              		.loc 1 194 1 is_stmt 0 view .LVU28
+ 221 0006 08BD     		pop	{r3, pc}
+ 222              	.L17:
+ 223              		.align	2
+ 224              	.L16:
+ 225 0008 00000000 		.word	HAL_IncTick
+ 226              		.cfi_endproc
+ 227              	.LFE73:
+ 229              		.section	.text.EXTI9_5_IRQHandler,"ax",%progbits
+ 230              		.align	1
+ 231              		.global	EXTI9_5_IRQHandler
+ 232              		.syntax unified
+ 233              		.thumb
+ 234              		.thumb_func
+ 235              		.fpu softvfp
+ 237              	EXTI9_5_IRQHandler:
+ 238              	.LFB74:
+ 239              		.loc 1 207 1 is_stmt 1 view -0
+ 240              		.cfi_startproc
+ 241              		@ args = 0, pretend = 0, frame = 0
+ 242              		@ frame_needed = 0, uses_anonymous_args = 0
+ 243 0000 08B5     		push	{r3, lr}
+ 244              	.LCFI1:
+ 245              		.cfi_def_cfa_offset 8
+ 246              		.cfi_offset 3, -8
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 5
+
+
+ 247              		.cfi_offset 14, -4
+ 248              		.loc 1 211 3 view .LVU30
+ 249 0002 4FF40070 		mov	r0, #512
+ 250 0006 014B     		ldr	r3, .L20
+ 251 0008 9847     		blx	r3
+ 252              	.LVL1:
+ 253              		.loc 1 215 1 is_stmt 0 view .LVU31
+ 254 000a 08BD     		pop	{r3, pc}
+ 255              	.L21:
+ 256              		.align	2
+ 257              	.L20:
+ 258 000c 00000000 		.word	HAL_GPIO_EXTI_IRQHandler
+ 259              		.cfi_endproc
+ 260              	.LFE74:
+ 262              		.section	.text.TIM1_UP_IRQHandler,"ax",%progbits
+ 263              		.align	1
+ 264              		.global	TIM1_UP_IRQHandler
+ 265              		.syntax unified
+ 266              		.thumb
+ 267              		.thumb_func
+ 268              		.fpu softvfp
+ 270              	TIM1_UP_IRQHandler:
+ 271              	.LFB75:
+ 272              		.loc 1 221 1 is_stmt 1 view -0
+ 273              		.cfi_startproc
+ 274              		@ args = 0, pretend = 0, frame = 0
+ 275              		@ frame_needed = 0, uses_anonymous_args = 0
+ 276 0000 08B5     		push	{r3, lr}
+ 277              	.LCFI2:
+ 278              		.cfi_def_cfa_offset 8
+ 279              		.cfi_offset 3, -8
+ 280              		.cfi_offset 14, -4
+ 281              		.loc 1 225 3 view .LVU33
+ 282 0002 0248     		ldr	r0, .L24
+ 283 0004 024B     		ldr	r3, .L24+4
+ 284 0006 9847     		blx	r3
+ 285              	.LVL2:
+ 286              		.loc 1 229 1 is_stmt 0 view .LVU34
+ 287 0008 08BD     		pop	{r3, pc}
+ 288              	.L25:
+ 289 000a 00BF     		.align	2
+ 290              	.L24:
+ 291 000c 00000000 		.word	htim1
+ 292 0010 00000000 		.word	HAL_TIM_IRQHandler
+ 293              		.cfi_endproc
+ 294              	.LFE75:
+ 296              		.section	.text.TIM1_CC_IRQHandler,"ax",%progbits
+ 297              		.align	1
+ 298              		.global	TIM1_CC_IRQHandler
+ 299              		.syntax unified
+ 300              		.thumb
+ 301              		.thumb_func
+ 302              		.fpu softvfp
+ 304              	TIM1_CC_IRQHandler:
+ 305              	.LFB76:
+ 306              		.loc 1 235 1 is_stmt 1 view -0
+ 307              		.cfi_startproc
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 6
+
+
+ 308              		@ args = 0, pretend = 0, frame = 0
+ 309              		@ frame_needed = 0, uses_anonymous_args = 0
+ 310 0000 08B5     		push	{r3, lr}
+ 311              	.LCFI3:
+ 312              		.cfi_def_cfa_offset 8
+ 313              		.cfi_offset 3, -8
+ 314              		.cfi_offset 14, -4
+ 315              		.loc 1 239 3 view .LVU36
+ 316 0002 0248     		ldr	r0, .L28
+ 317 0004 024B     		ldr	r3, .L28+4
+ 318 0006 9847     		blx	r3
+ 319              	.LVL3:
+ 320              		.loc 1 243 1 is_stmt 0 view .LVU37
+ 321 0008 08BD     		pop	{r3, pc}
+ 322              	.L29:
+ 323 000a 00BF     		.align	2
+ 324              	.L28:
+ 325 000c 00000000 		.word	htim1
+ 326 0010 00000000 		.word	HAL_TIM_IRQHandler
+ 327              		.cfi_endproc
+ 328              	.LFE76:
+ 330              		.section	.text.TIM3_IRQHandler,"ax",%progbits
+ 331              		.align	1
+ 332              		.global	TIM3_IRQHandler
+ 333              		.syntax unified
+ 334              		.thumb
+ 335              		.thumb_func
+ 336              		.fpu softvfp
+ 338              	TIM3_IRQHandler:
+ 339              	.LFB77:
+ 340              		.loc 1 249 1 is_stmt 1 view -0
+ 341              		.cfi_startproc
+ 342              		@ args = 0, pretend = 0, frame = 0
+ 343              		@ frame_needed = 0, uses_anonymous_args = 0
+ 344 0000 08B5     		push	{r3, lr}
+ 345              	.LCFI4:
+ 346              		.cfi_def_cfa_offset 8
+ 347              		.cfi_offset 3, -8
+ 348              		.cfi_offset 14, -4
+ 349              		.loc 1 253 3 view .LVU39
+ 350 0002 0248     		ldr	r0, .L32
+ 351 0004 024B     		ldr	r3, .L32+4
+ 352 0006 9847     		blx	r3
+ 353              	.LVL4:
+ 354              		.loc 1 257 1 is_stmt 0 view .LVU40
+ 355 0008 08BD     		pop	{r3, pc}
+ 356              	.L33:
+ 357 000a 00BF     		.align	2
+ 358              	.L32:
+ 359 000c 00000000 		.word	htim3
+ 360 0010 00000000 		.word	HAL_TIM_IRQHandler
+ 361              		.cfi_endproc
+ 362              	.LFE77:
+ 364              		.section	.text.EXTI15_10_IRQHandler,"ax",%progbits
+ 365              		.align	1
+ 366              		.global	EXTI15_10_IRQHandler
+ 367              		.syntax unified
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 7
+
+
+ 368              		.thumb
+ 369              		.thumb_func
+ 370              		.fpu softvfp
+ 372              	EXTI15_10_IRQHandler:
+ 373              	.LFB78:
+ 374              		.loc 1 263 1 is_stmt 1 view -0
+ 375              		.cfi_startproc
+ 376              		@ args = 0, pretend = 0, frame = 0
+ 377              		@ frame_needed = 0, uses_anonymous_args = 0
+ 378 0000 10B5     		push	{r4, lr}
+ 379              	.LCFI5:
+ 380              		.cfi_def_cfa_offset 8
+ 381              		.cfi_offset 4, -8
+ 382              		.cfi_offset 14, -4
+ 383              		.loc 1 267 3 view .LVU42
+ 384 0002 4FF48060 		mov	r0, #1024
+ 385 0006 064C     		ldr	r4, .L36
+ 386 0008 A047     		blx	r4
+ 387              	.LVL5:
+ 388              		.loc 1 268 3 view .LVU43
+ 389 000a 4FF48050 		mov	r0, #4096
+ 390 000e A047     		blx	r4
+ 391              	.LVL6:
+ 392              		.loc 1 269 3 view .LVU44
+ 393 0010 4FF48040 		mov	r0, #16384
+ 394 0014 A047     		blx	r4
+ 395              	.LVL7:
+ 396              		.loc 1 270 3 view .LVU45
+ 397 0016 4FF40040 		mov	r0, #32768
+ 398 001a A047     		blx	r4
+ 399              	.LVL8:
+ 400              		.loc 1 274 1 is_stmt 0 view .LVU46
+ 401 001c 10BD     		pop	{r4, pc}
+ 402              	.L37:
+ 403 001e 00BF     		.align	2
+ 404              	.L36:
+ 405 0020 00000000 		.word	HAL_GPIO_EXTI_IRQHandler
+ 406              		.cfi_endproc
+ 407              	.LFE78:
+ 409              		.section	.text.HAL_GPIO_EXTI_Callback,"ax",%progbits
+ 410              		.align	1
+ 411              		.global	HAL_GPIO_EXTI_Callback
+ 412              		.syntax unified
+ 413              		.thumb
+ 414              		.thumb_func
+ 415              		.fpu softvfp
+ 417              	HAL_GPIO_EXTI_Callback:
+ 418              	.LVL9:
+ 419              	.LFB79:
+ 420              		.loc 1 287 47 is_stmt 1 view -0
+ 421              		.cfi_startproc
+ 422              		@ args = 0, pretend = 0, frame = 0
+ 423              		@ frame_needed = 0, uses_anonymous_args = 0
+ 424              		.loc 1 287 47 is_stmt 0 view .LVU48
+ 425 0000 08B5     		push	{r3, lr}
+ 426              	.LCFI6:
+ 427              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 8
+
+
+ 428              		.cfi_offset 3, -8
+ 429              		.cfi_offset 14, -4
+ 430              		.loc 1 288 2 is_stmt 1 view .LVU49
+ 431 0002 B0F5805F 		cmp	r0, #4096
+ 432 0006 44D0     		beq	.L39
+ 433 0008 2AD9     		bls	.L57
+ 434 000a B0F5804F 		cmp	r0, #16384
+ 435 000e 46D0     		beq	.L44
+ 436 0010 B0F5004F 		cmp	r0, #32768
+ 437 0014 3CD1     		bne	.L38
+ 438              		.loc 1 314 4 view .LVU50
+ 439              		.loc 1 314 27 is_stmt 0 view .LVU51
+ 440 0016 644B     		ldr	r3, .L68
+ 441 0018 1B88     		ldrh	r3, [r3]
+ 442 001a 9BB2     		uxth	r3, r3
+ 443              		.loc 1 314 6 view .LVU52
+ 444 001c 1E2B     		cmp	r3, #30
+ 445 001e 00F08F80 		beq	.L58
+ 446              		.loc 1 316 10 is_stmt 1 view .LVU53
+ 447              		.loc 1 316 27 is_stmt 0 view .LVU54
+ 448 0022 614B     		ldr	r3, .L68
+ 449 0024 1B88     		ldrh	r3, [r3]
+ 450 0026 9BB2     		uxth	r3, r3
+ 451              		.loc 1 316 12 view .LVU55
+ 452 0028 282B     		cmp	r3, #40
+ 453 002a 00F08D80 		beq	.L59
+ 454              	.L52:
+ 455              		.loc 1 319 10 is_stmt 1 view .LVU56
+ 456              		.loc 1 319 27 is_stmt 0 view .LVU57
+ 457 002e 5F4B     		ldr	r3, .L68+4
+ 458 0030 1B88     		ldrh	r3, [r3]
+ 459 0032 9BB2     		uxth	r3, r3
+ 460              		.loc 1 319 12 view .LVU58
+ 461 0034 282B     		cmp	r3, #40
+ 462 0036 00F09E80 		beq	.L60
+ 463              	.L53:
+ 464              		.loc 1 321 10 is_stmt 1 view .LVU59
+ 465              		.loc 1 321 27 is_stmt 0 view .LVU60
+ 466 003a 5C4B     		ldr	r3, .L68+4
+ 467 003c 1B88     		ldrh	r3, [r3]
+ 468 003e 9BB2     		uxth	r3, r3
+ 469              		.loc 1 321 12 view .LVU61
+ 470 0040 2D2B     		cmp	r3, #45
+ 471 0042 00F0A280 		beq	.L61
+ 472              		.loc 1 323 10 is_stmt 1 view .LVU62
+ 473              		.loc 1 323 27 is_stmt 0 view .LVU63
+ 474 0046 584B     		ldr	r3, .L68
+ 475 0048 1B88     		ldrh	r3, [r3]
+ 476 004a 9BB2     		uxth	r3, r3
+ 477              		.loc 1 323 12 view .LVU64
+ 478 004c 2D2B     		cmp	r3, #45
+ 479 004e 00F0A080 		beq	.L62
+ 480              		.loc 1 326 10 is_stmt 1 view .LVU65
+ 481              		.loc 1 326 24 is_stmt 0 view .LVU66
+ 482 0052 554A     		ldr	r2, .L68
+ 483 0054 1388     		ldrh	r3, [r2]
+ 484 0056 9BB2     		uxth	r3, r3
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 9
+
+
+ 485 0058 0F33     		adds	r3, r3, #15
+ 486 005a 9BB2     		uxth	r3, r3
+ 487 005c 1380     		strh	r3, [r2]	@ movhi
+ 488              		.loc 1 330 1 view .LVU67
+ 489 005e 17E0     		b	.L38
+ 490              	.L57:
+ 491              		.loc 1 288 2 view .LVU68
+ 492 0060 B0F5007F 		cmp	r0, #512
+ 493 0064 08D0     		beq	.L41
+ 494 0066 B0F5806F 		cmp	r0, #1024
+ 495 006a 11D1     		bne	.L38
+ 496              		.loc 1 293 4 is_stmt 1 view .LVU69
+ 497 006c 4FF40061 		mov	r1, #2048
+ 498 0070 4F48     		ldr	r0, .L68+8
+ 499              	.LVL10:
+ 500              		.loc 1 293 4 is_stmt 0 view .LVU70
+ 501 0072 504B     		ldr	r3, .L68+12
+ 502 0074 9847     		blx	r3
+ 503              	.LVL11:
+ 504              		.loc 1 294 3 is_stmt 1 view .LVU71
+ 505 0076 0BE0     		b	.L38
+ 506              	.LVL12:
+ 507              	.L41:
+ 508              		.loc 1 290 4 view .LVU72
+ 509              		.loc 1 290 20 is_stmt 0 view .LVU73
+ 510 0078 4F48     		ldr	r0, .L68+16
+ 511              	.LVL13:
+ 512              		.loc 1 290 20 view .LVU74
+ 513 007a 0368     		ldr	r3, [r0]
+ 514 007c 0133     		adds	r3, r3, #1
+ 515              		.loc 1 290 25 view .LVU75
+ 516 007e 4F4A     		ldr	r2, .L68+20
+ 517 0080 A2FB0312 		umull	r1, r2, r2, r3
+ 518 0084 22F00101 		bic	r1, r2, #1
+ 519 0088 01EB5202 		add	r2, r1, r2, lsr #1
+ 520 008c 9B1A     		subs	r3, r3, r2
+ 521              		.loc 1 290 10 view .LVU76
+ 522 008e 0360     		str	r3, [r0]
+ 523              		.loc 1 291 3 is_stmt 1 view .LVU77
+ 524              	.L38:
+ 525              		.loc 1 330 1 is_stmt 0 view .LVU78
+ 526 0090 08BD     		pop	{r3, pc}
+ 527              	.LVL14:
+ 528              	.L39:
+ 529              		.loc 1 296 4 is_stmt 1 view .LVU79
+ 530 0092 4FF40051 		mov	r1, #8192
+ 531 0096 4648     		ldr	r0, .L68+8
+ 532              	.LVL15:
+ 533              		.loc 1 296 4 is_stmt 0 view .LVU80
+ 534 0098 464B     		ldr	r3, .L68+12
+ 535 009a 9847     		blx	r3
+ 536              	.LVL16:
+ 537              		.loc 1 297 3 is_stmt 1 view .LVU81
+ 538 009c F8E7     		b	.L38
+ 539              	.LVL17:
+ 540              	.L44:
+ 541              		.loc 1 299 4 view .LVU82
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 10
+
+
+ 542              		.loc 1 299 27 is_stmt 0 view .LVU83
+ 543 009e 434B     		ldr	r3, .L68+4
+ 544 00a0 1B88     		ldrh	r3, [r3]
+ 545 00a2 9BB2     		uxth	r3, r3
+ 546              		.loc 1 299 6 view .LVU84
+ 547 00a4 1E2B     		cmp	r3, #30
+ 548 00a6 1AD0     		beq	.L63
+ 549              		.loc 1 301 10 is_stmt 1 view .LVU85
+ 550              		.loc 1 301 27 is_stmt 0 view .LVU86
+ 551 00a8 404B     		ldr	r3, .L68+4
+ 552 00aa 1B88     		ldrh	r3, [r3]
+ 553 00ac 9BB2     		uxth	r3, r3
+ 554              		.loc 1 301 12 view .LVU87
+ 555 00ae 282B     		cmp	r3, #40
+ 556 00b0 19D0     		beq	.L64
+ 557              	.L47:
+ 558              		.loc 1 304 10 is_stmt 1 view .LVU88
+ 559              		.loc 1 304 27 is_stmt 0 view .LVU89
+ 560 00b2 3E4B     		ldr	r3, .L68+4
+ 561 00b4 1B88     		ldrh	r3, [r3]
+ 562 00b6 9BB2     		uxth	r3, r3
+ 563              		.loc 1 304 12 view .LVU90
+ 564 00b8 282B     		cmp	r3, #40
+ 565 00ba 29D0     		beq	.L65
+ 566              	.L48:
+ 567              		.loc 1 306 10 is_stmt 1 view .LVU91
+ 568              		.loc 1 306 27 is_stmt 0 view .LVU92
+ 569 00bc 3A4B     		ldr	r3, .L68
+ 570 00be 1B88     		ldrh	r3, [r3]
+ 571 00c0 9BB2     		uxth	r3, r3
+ 572              		.loc 1 306 12 view .LVU93
+ 573 00c2 2D2B     		cmp	r3, #45
+ 574 00c4 2DD0     		beq	.L66
+ 575              		.loc 1 308 10 is_stmt 1 view .LVU94
+ 576              		.loc 1 308 27 is_stmt 0 view .LVU95
+ 577 00c6 394B     		ldr	r3, .L68+4
+ 578 00c8 1B88     		ldrh	r3, [r3]
+ 579 00ca 9BB2     		uxth	r3, r3
+ 580              		.loc 1 308 12 view .LVU96
+ 581 00cc 2D2B     		cmp	r3, #45
+ 582 00ce 2CD0     		beq	.L67
+ 583              		.loc 1 311 10 is_stmt 1 view .LVU97
+ 584              		.loc 1 311 24 is_stmt 0 view .LVU98
+ 585 00d0 364A     		ldr	r2, .L68+4
+ 586 00d2 1388     		ldrh	r3, [r2]
+ 587 00d4 9BB2     		uxth	r3, r3
+ 588 00d6 0F33     		adds	r3, r3, #15
+ 589 00d8 9BB2     		uxth	r3, r3
+ 590 00da 1380     		strh	r3, [r2]	@ movhi
+ 591 00dc D8E7     		b	.L38
+ 592              	.L63:
+ 593              		.loc 1 300 5 is_stmt 1 view .LVU99
+ 594              		.loc 1 300 19 is_stmt 0 view .LVU100
+ 595 00de 334B     		ldr	r3, .L68+4
+ 596 00e0 2822     		movs	r2, #40
+ 597 00e2 1A80     		strh	r2, [r3]	@ movhi
+ 598 00e4 D4E7     		b	.L38
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 11
+
+
+ 599              	.L64:
+ 600              		.loc 1 301 51 discriminator 1 view .LVU101
+ 601 00e6 304B     		ldr	r3, .L68
+ 602 00e8 1B88     		ldrh	r3, [r3]
+ 603 00ea 9BB2     		uxth	r3, r3
+ 604              		.loc 1 301 33 discriminator 1 view .LVU102
+ 605 00ec 282B     		cmp	r3, #40
+ 606 00ee E0D0     		beq	.L47
+ 607              		.loc 1 301 72 discriminator 2 view .LVU103
+ 608 00f0 2D4B     		ldr	r3, .L68
+ 609 00f2 1B88     		ldrh	r3, [r3]
+ 610 00f4 9BB2     		uxth	r3, r3
+ 611              		.loc 1 301 56 discriminator 2 view .LVU104
+ 612 00f6 2D2B     		cmp	r3, #45
+ 613 00f8 DBD0     		beq	.L47
+ 614              		.loc 1 302 5 is_stmt 1 view .LVU105
+ 615              		.loc 1 302 35 is_stmt 0 view .LVU106
+ 616 00fa 0023     		movs	r3, #0
+ 617 00fc 2A4A     		ldr	r2, .L68
+ 618 00fe 1380     		strh	r3, [r2]	@ movhi
+ 619              		.loc 1 302 19 view .LVU107
+ 620 0100 2A4A     		ldr	r2, .L68+4
+ 621 0102 1380     		strh	r3, [r2]	@ movhi
+ 622              		.loc 1 303 5 is_stmt 1 view .LVU108
+ 623              		.loc 1 303 17 is_stmt 0 view .LVU109
+ 624 0104 2E4A     		ldr	r2, .L68+24
+ 625 0106 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 626 0108 0133     		adds	r3, r3, #1
+ 627 010a DBB2     		uxtb	r3, r3
+ 628 010c 1370     		strb	r3, [r2]
+ 629 010e BFE7     		b	.L38
+ 630              	.L65:
+ 631              		.loc 1 304 50 discriminator 1 view .LVU110
+ 632 0110 254B     		ldr	r3, .L68
+ 633 0112 1B88     		ldrh	r3, [r3]
+ 634 0114 9BB2     		uxth	r3, r3
+ 635              		.loc 1 304 33 discriminator 1 view .LVU111
+ 636 0116 282B     		cmp	r3, #40
+ 637 0118 D0D1     		bne	.L48
+ 638              		.loc 1 305 5 is_stmt 1 view .LVU112
+ 639              		.loc 1 305 19 is_stmt 0 view .LVU113
+ 640 011a 244B     		ldr	r3, .L68+4
+ 641 011c 2D22     		movs	r2, #45
+ 642 011e 1A80     		strh	r2, [r3]	@ movhi
+ 643 0120 B6E7     		b	.L38
+ 644              	.L66:
+ 645              		.loc 1 307 5 is_stmt 1 view .LVU114
+ 646              		.loc 1 307 19 is_stmt 0 view .LVU115
+ 647 0122 214B     		ldr	r3, .L68
+ 648 0124 2822     		movs	r2, #40
+ 649 0126 1A80     		strh	r2, [r3]	@ movhi
+ 650 0128 B2E7     		b	.L38
+ 651              	.L67:
+ 652              		.loc 1 309 5 is_stmt 1 view .LVU116
+ 653              		.loc 1 309 35 is_stmt 0 view .LVU117
+ 654 012a 0023     		movs	r3, #0
+ 655 012c 1E4A     		ldr	r2, .L68
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 12
+
+
+ 656 012e 1380     		strh	r3, [r2]	@ movhi
+ 657              		.loc 1 309 19 view .LVU118
+ 658 0130 1E4A     		ldr	r2, .L68+4
+ 659 0132 1380     		strh	r3, [r2]	@ movhi
+ 660              		.loc 1 310 5 is_stmt 1 view .LVU119
+ 661              		.loc 1 310 17 is_stmt 0 view .LVU120
+ 662 0134 224A     		ldr	r2, .L68+24
+ 663 0136 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 664 0138 0133     		adds	r3, r3, #1
+ 665 013a DBB2     		uxtb	r3, r3
+ 666 013c 1370     		strb	r3, [r2]
+ 667 013e A7E7     		b	.L38
+ 668              	.L58:
+ 669              		.loc 1 315 5 is_stmt 1 view .LVU121
+ 670              		.loc 1 315 19 is_stmt 0 view .LVU122
+ 671 0140 194B     		ldr	r3, .L68
+ 672 0142 2822     		movs	r2, #40
+ 673 0144 1A80     		strh	r2, [r3]	@ movhi
+ 674 0146 A3E7     		b	.L38
+ 675              	.L59:
+ 676              		.loc 1 316 51 discriminator 1 view .LVU123
+ 677 0148 184B     		ldr	r3, .L68+4
+ 678 014a 1B88     		ldrh	r3, [r3]
+ 679 014c 9BB2     		uxth	r3, r3
+ 680              		.loc 1 316 33 discriminator 1 view .LVU124
+ 681 014e 282B     		cmp	r3, #40
+ 682 0150 3FF46DAF 		beq	.L52
+ 683              		.loc 1 316 72 discriminator 2 view .LVU125
+ 684 0154 154B     		ldr	r3, .L68+4
+ 685 0156 1B88     		ldrh	r3, [r3]
+ 686 0158 9BB2     		uxth	r3, r3
+ 687              		.loc 1 316 56 discriminator 2 view .LVU126
+ 688 015a 2D2B     		cmp	r3, #45
+ 689 015c 3FF467AF 		beq	.L52
+ 690              		.loc 1 317 5 is_stmt 1 view .LVU127
+ 691              		.loc 1 317 35 is_stmt 0 view .LVU128
+ 692 0160 0023     		movs	r3, #0
+ 693 0162 124A     		ldr	r2, .L68+4
+ 694 0164 1380     		strh	r3, [r2]	@ movhi
+ 695              		.loc 1 317 19 view .LVU129
+ 696 0166 104A     		ldr	r2, .L68
+ 697 0168 1380     		strh	r3, [r2]	@ movhi
+ 698              		.loc 1 318 5 is_stmt 1 view .LVU130
+ 699              		.loc 1 318 17 is_stmt 0 view .LVU131
+ 700 016a 164A     		ldr	r2, .L68+28
+ 701 016c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 702 016e 0133     		adds	r3, r3, #1
+ 703 0170 DBB2     		uxtb	r3, r3
+ 704 0172 1370     		strb	r3, [r2]
+ 705 0174 8CE7     		b	.L38
+ 706              	.L60:
+ 707              		.loc 1 319 50 discriminator 1 view .LVU132
+ 708 0176 0C4B     		ldr	r3, .L68
+ 709 0178 1B88     		ldrh	r3, [r3]
+ 710 017a 9BB2     		uxth	r3, r3
+ 711              		.loc 1 319 33 discriminator 1 view .LVU133
+ 712 017c 282B     		cmp	r3, #40
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 13
+
+
+ 713 017e 7FF45CAF 		bne	.L53
+ 714              		.loc 1 320 5 is_stmt 1 view .LVU134
+ 715              		.loc 1 320 19 is_stmt 0 view .LVU135
+ 716 0182 094B     		ldr	r3, .L68
+ 717 0184 2D22     		movs	r2, #45
+ 718 0186 1A80     		strh	r2, [r3]	@ movhi
+ 719 0188 82E7     		b	.L38
+ 720              	.L61:
+ 721              		.loc 1 322 5 is_stmt 1 view .LVU136
+ 722              		.loc 1 322 19 is_stmt 0 view .LVU137
+ 723 018a 084B     		ldr	r3, .L68+4
+ 724 018c 2822     		movs	r2, #40
+ 725 018e 1A80     		strh	r2, [r3]	@ movhi
+ 726 0190 7EE7     		b	.L38
+ 727              	.L62:
+ 728              		.loc 1 324 5 is_stmt 1 view .LVU138
+ 729              		.loc 1 324 35 is_stmt 0 view .LVU139
+ 730 0192 0023     		movs	r3, #0
+ 731 0194 044A     		ldr	r2, .L68
+ 732 0196 1380     		strh	r3, [r2]	@ movhi
+ 733              		.loc 1 324 19 view .LVU140
+ 734 0198 044A     		ldr	r2, .L68+4
+ 735 019a 1380     		strh	r3, [r2]	@ movhi
+ 736              		.loc 1 325 5 is_stmt 1 view .LVU141
+ 737              		.loc 1 325 17 is_stmt 0 view .LVU142
+ 738 019c 094A     		ldr	r2, .L68+28
+ 739 019e 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 740 01a0 0133     		adds	r3, r3, #1
+ 741 01a2 DBB2     		uxtb	r3, r3
+ 742 01a4 1370     		strb	r3, [r2]
+ 743 01a6 73E7     		b	.L38
+ 744              	.L69:
+ 745              		.align	2
+ 746              	.L68:
+ 747 01a8 00000000 		.word	.LANCHOR2
+ 748 01ac 00000000 		.word	.LANCHOR1
+ 749 01b0 000C0140 		.word	1073810432
+ 750 01b4 00000000 		.word	HAL_GPIO_TogglePin
+ 751 01b8 00000000 		.word	.LANCHOR0
+ 752 01bc ABAAAAAA 		.word	-1431655765
+ 753 01c0 00000000 		.word	.LANCHOR3
+ 754 01c4 00000000 		.word	.LANCHOR4
+ 755              		.cfi_endproc
+ 756              	.LFE79:
+ 758              		.global	state
+ 759              		.global	player2_gem
+ 760              		.global	player1_gem
+ 761              		.global	player2_point
+ 762              		.global	player1_point
+ 763              		.section	.bss.player1_gem,"aw",%nobits
+ 764              		.set	.LANCHOR3,. + 0
+ 767              	player1_gem:
+ 768 0000 00       		.space	1
+ 769              		.section	.bss.player1_point,"aw",%nobits
+ 770              		.align	1
+ 771              		.set	.LANCHOR1,. + 0
+ 774              	player1_point:
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 14
+
+
+ 775 0000 0000     		.space	2
+ 776              		.section	.bss.player2_gem,"aw",%nobits
+ 777              		.set	.LANCHOR4,. + 0
+ 780              	player2_gem:
+ 781 0000 00       		.space	1
+ 782              		.section	.bss.player2_point,"aw",%nobits
+ 783              		.align	1
+ 784              		.set	.LANCHOR2,. + 0
+ 787              	player2_point:
+ 788 0000 0000     		.space	2
+ 789              		.section	.bss.state,"aw",%nobits
+ 790              		.align	2
+ 791              		.set	.LANCHOR0,. + 0
+ 794              	state:
+ 795 0000 00000000 		.space	4
+ 796              		.text
+ 797              	.Letext0:
+ 798              		.file 2 "../c:\\users\\miroslav\\desktop\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none-eabi\\in
+ 799              		.file 3 "../c:\\users\\miroslav\\desktop\\gnu mcu\\arm-none-eabi-gcc-10.2.1-1.1\\arm-none-eabi\\in
+ 800              		.file 4 "../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 801              		.file 5 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 802              		.file 6 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 803              		.file 7 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 804              		.file 8 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 805              		.file 9 "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 15
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32f1xx_it.c
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:16     .text.NMI_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:24     .text.NMI_Handler:0000000000000000 NMI_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:42     .text.HardFault_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:49     .text.HardFault_Handler:0000000000000000 HardFault_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:66     .text.MemManage_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:73     .text.MemManage_Handler:0000000000000000 MemManage_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:90     .text.BusFault_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:97     .text.BusFault_Handler:0000000000000000 BusFault_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:114    .text.UsageFault_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:121    .text.UsageFault_Handler:0000000000000000 UsageFault_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:138    .text.SVC_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:145    .text.SVC_Handler:0000000000000000 SVC_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:158    .text.DebugMon_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:165    .text.DebugMon_Handler:0000000000000000 DebugMon_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:178    .text.PendSV_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:185    .text.PendSV_Handler:0000000000000000 PendSV_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:198    .text.SysTick_Handler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:205    .text.SysTick_Handler:0000000000000000 SysTick_Handler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:225    .text.SysTick_Handler:0000000000000008 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:230    .text.EXTI9_5_IRQHandler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:237    .text.EXTI9_5_IRQHandler:0000000000000000 EXTI9_5_IRQHandler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:258    .text.EXTI9_5_IRQHandler:000000000000000c $d
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:263    .text.TIM1_UP_IRQHandler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:270    .text.TIM1_UP_IRQHandler:0000000000000000 TIM1_UP_IRQHandler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:291    .text.TIM1_UP_IRQHandler:000000000000000c $d
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:297    .text.TIM1_CC_IRQHandler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:304    .text.TIM1_CC_IRQHandler:0000000000000000 TIM1_CC_IRQHandler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:325    .text.TIM1_CC_IRQHandler:000000000000000c $d
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:331    .text.TIM3_IRQHandler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:338    .text.TIM3_IRQHandler:0000000000000000 TIM3_IRQHandler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:359    .text.TIM3_IRQHandler:000000000000000c $d
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:365    .text.EXTI15_10_IRQHandler:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:372    .text.EXTI15_10_IRQHandler:0000000000000000 EXTI15_10_IRQHandler
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:405    .text.EXTI15_10_IRQHandler:0000000000000020 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:410    .text.HAL_GPIO_EXTI_Callback:0000000000000000 $t
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:417    .text.HAL_GPIO_EXTI_Callback:0000000000000000 HAL_GPIO_EXTI_Callback
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:747    .text.HAL_GPIO_EXTI_Callback:00000000000001a8 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:794    .bss.state:0000000000000000 state
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:780    .bss.player2_gem:0000000000000000 player2_gem
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:767    .bss.player1_gem:0000000000000000 player1_gem
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:787    .bss.player2_point:0000000000000000 player2_point
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:774    .bss.player1_point:0000000000000000 player1_point
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:768    .bss.player1_gem:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:770    .bss.player1_point:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:781    .bss.player2_gem:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:783    .bss.player2_point:0000000000000000 $d
+C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s:790    .bss.state:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+HAL_IncTick
+HAL_GPIO_EXTI_IRQHandler
+htim1
+HAL_TIM_IRQHandler
+htim3
+HAL_GPIO_TogglePin
+ARM GAS  C:\Users\Miroslav\AppData\Local\Temp\ccRN4T6m.s 			page 16
+
+

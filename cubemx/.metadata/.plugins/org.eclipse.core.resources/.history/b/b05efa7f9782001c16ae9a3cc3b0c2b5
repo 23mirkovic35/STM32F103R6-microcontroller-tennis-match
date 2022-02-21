@@ -1,0 +1,24 @@
+/*
+ * display.h
+ *
+ *  Created on: Jan 31, 2022
+ *      Author: Miroslav
+ */
+
+#ifndef CORE_SRC_DISPLAY_H_
+#define CORE_SRC_DISPLAY_H_
+
+#include "display.h"
+
+u seven_seg[]=
+{ 0x81 };
+
+void display(){
+
+
+
+}
+
+
+
+#endif /* CORE_SRC_DISPLAY_H_ */
